@@ -15,6 +15,8 @@
  */
 package org.openestate.is24.restapi.utils;
 
+import java.security.KeyManagementException;
+import java.security.NoSuchAlgorithmException;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -29,7 +31,7 @@ import org.junit.runners.JUnit4;
 public class SslUtilsTest {
 
     @Test
-    public void testDisableCertificateChecksIsRemoved() {
+    public void testDisableCertificateChecksIsRemoved() throws NoSuchAlgorithmException, KeyManagementException {
         try {
             SslUtils.disableCertificateChecks();
             Assert.fail("disableCertificateChecks must not install a trust-all manager");
