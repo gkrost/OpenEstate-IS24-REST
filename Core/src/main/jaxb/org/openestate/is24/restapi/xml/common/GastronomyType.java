@@ -1,38 +1,39 @@
-
 package org.openestate.is24.restapi.xml.common;
 
-import javax.annotation.Generated;
-import javax.xml.bind.annotation.XmlEnum;
-import javax.xml.bind.annotation.XmlType;
+import jakarta.annotation.Generated;
+import jakarta.xml.bind.annotation.XmlEnum;
+import jakarta.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for GastronomyType.
+ * Aufzählung der Arten von Gatronomie, wie z.B. Hotels, Diskotheken oder
+ *                 Restaurants
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * <p>
- * <pre>
- * &lt;simpleType name="GastronomyType"&gt;
- *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
- *     &lt;enumeration value="BAR_LOUNGE"/&gt;
- *     &lt;enumeration value="CAFE"/&gt;
- *     &lt;enumeration value="CLUB_DISCO"/&gt;
- *     &lt;enumeration value="GUESTS_HOUSE"/&gt;
- *     &lt;enumeration value="TAVERN"/&gt;
- *     &lt;enumeration value="HOTEL"/&gt;
- *     &lt;enumeration value="HOTEL_RESIDENCE"/&gt;
- *     &lt;enumeration value="HOTEL_GARNI"/&gt;
- *     &lt;enumeration value="PENSION"/&gt;
- *     &lt;enumeration value="RESTAURANT"/&gt;
- *     &lt;enumeration value="BUNGALOW"/&gt;
- *   &lt;/restriction&gt;
- * &lt;/simpleType&gt;
- * </pre>
+ * <p>Java class for GastronomyType</p>.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.</p>
+ * <pre>{@code
+ * <simpleType name="GastronomyType">
+ *   <restriction base="{http://www.w3.org/2001/XMLSchema}string">
+ *     <enumeration value="BAR_LOUNGE"/>
+ *     <enumeration value="CAFE"/>
+ *     <enumeration value="CLUB_DISCO"/>
+ *     <enumeration value="GUESTS_HOUSE"/>
+ *     <enumeration value="TAVERN"/>
+ *     <enumeration value="HOTEL"/>
+ *     <enumeration value="HOTEL_RESIDENCE"/>
+ *     <enumeration value="HOTEL_GARNI"/>
+ *     <enumeration value="PENSION"/>
+ *     <enumeration value="RESTAURANT"/>
+ *     <enumeration value="BUNGALOW"/>
+ *   </restriction>
+ * </simpleType>
+ * }</pre>
  * 
  */
 @XmlType(name = "GastronomyType")
 @XmlEnum
-@Generated(value = "com.sun.tools.xjc.Driver", date = "2021-08-07T09:44:49+02:00", comments = "JAXB RI v2.3.0")
+@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.9", date = "2026-08-26T20:20:00+02:00")
 public enum GastronomyType {
 
 
@@ -55,13 +56,13 @@ public enum GastronomyType {
     CLUB_DISCO,
 
     /**
-     * G\u00e4stehaus
+     * Gästehaus
      * 
      */
     GUESTS_HOUSE,
 
     /**
-     * Gastst\u00e4tte
+     * Gaststätte
      * 
      */
     TAVERN,
@@ -79,8 +80,7 @@ public enum GastronomyType {
     HOTEL_RESIDENCE,
 
     /**
-     * Hotel garni (Ein Hotel, dass nur Fr\u00fchst\u00fcck anbietet /Tageshotel)
-     *                     
+     * Hotel garni (Ein Hotel, dass nur Frühstück anbietet /Tageshotel)
      * 
      */
     HOTEL_GARNI,

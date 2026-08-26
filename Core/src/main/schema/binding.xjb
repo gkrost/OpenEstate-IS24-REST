@@ -10,8 +10,8 @@
                        parseMethod="org.openestate.is24.restapi.utils.XmlUtils.parseDate"
                        printMethod="org.openestate.is24.restapi.utils.XmlUtils.printDate"/>
         <jaxb:javaType name="java.util.Calendar" xmlType="xsd:dateTime"
-                       parseMethod="javax.xml.bind.DatatypeConverter.parseDateTime"
-                       printMethod="javax.xml.bind.DatatypeConverter.printDateTime"/>
+                       parseMethod="jakarta.xml.bind.DatatypeConverter.parseDateTime"
+                       printMethod="jakarta.xml.bind.DatatypeConverter.printDateTime"/>
         <jaxb:javaType name="java.net.URI" xmlType="xsd:anyURI"
                        parseMethod="org.openestate.is24.restapi.utils.XmlUtils.parseUri"
                        printMethod="org.openestate.is24.restapi.utils.XmlUtils.printUri"/>
@@ -51,11 +51,11 @@
         <jaxb:javaType name="java.lang.Integer" xmlType="is24common:percentType"
                        parseMethod="org.openestate.is24.restapi.utils.XmlUtils.parsePercent"
                        printMethod="org.openestate.is24.restapi.utils.XmlUtils.printPercent"/>
-        <jaxb:javaType name="java.lang.Long" xmlType="xsd:int" parseMethod="javax.xml.bind.DatatypeConverter.parseLong"
-                       printMethod="javax.xml.bind.DatatypeConverter.printLong"/>
+        <jaxb:javaType name="java.lang.Long" xmlType="xsd:int" parseMethod="jakarta.xml.bind.DatatypeConverter.parseLong"
+                       printMethod="jakarta.xml.bind.DatatypeConverter.printLong"/>
         <jaxb:javaType name="java.math.BigDecimal" xmlType="xsd:double"
-                       parseMethod="javax.xml.bind.DatatypeConverter.parseDecimal"
-                       printMethod="javax.xml.bind.DatatypeConverter.printDecimal"/>
+                       parseMethod="jakarta.xml.bind.DatatypeConverter.parseDecimal"
+                       printMethod="jakarta.xml.bind.DatatypeConverter.printDecimal"/>
 
         <!--<javaType name="java.lang.String" xmlType="is24common:OIDType" parseMethod="org.openestate.is24.restapi.utils.XmlUtils.parseOid" printMethod="org.openestate.is24.restapi.utils.XmlUtils.printOid" />-->
     </jaxb:globalBindings>

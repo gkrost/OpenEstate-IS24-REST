@@ -1,8 +1,7 @@
-
 package org.openestate.is24.restapi.xml.realestateproject;
 
 import java.awt.Color;
-import javax.xml.bind.annotation.adapters.XmlAdapter;
+import jakarta.xml.bind.annotation.adapters.XmlAdapter;
 
 public class Adapter2
     extends XmlAdapter<String, Color>

@@ -1,27 +1,26 @@
-
 package org.openestate.is24.restapi.xml.realestates;
 
 import java.io.Serializable;
 import java.math.BigDecimal;
 import java.util.Calendar;
-import javax.annotation.Generated;
-import javax.xml.bind.annotation.XmlAccessType;
-import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlSchemaType;
-import javax.xml.bind.annotation.XmlType;
-import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
-import org.jvnet.jaxb2_commons.lang.CopyStrategy2;
-import org.jvnet.jaxb2_commons.lang.CopyTo2;
-import org.jvnet.jaxb2_commons.lang.Equals2;
-import org.jvnet.jaxb2_commons.lang.EqualsStrategy2;
-import org.jvnet.jaxb2_commons.lang.JAXBCopyStrategy;
-import org.jvnet.jaxb2_commons.lang.JAXBEqualsStrategy;
-import org.jvnet.jaxb2_commons.lang.JAXBToStringStrategy;
-import org.jvnet.jaxb2_commons.lang.ToString2;
-import org.jvnet.jaxb2_commons.lang.ToStringStrategy2;
-import org.jvnet.jaxb2_commons.locator.ObjectLocator;
-import org.jvnet.jaxb2_commons.locator.util.LocatorUtils;
+import jakarta.annotation.Generated;
+import jakarta.xml.bind.annotation.XmlAccessType;
+import jakarta.xml.bind.annotation.XmlAccessorType;
+import jakarta.xml.bind.annotation.XmlElement;
+import jakarta.xml.bind.annotation.XmlSchemaType;
+import jakarta.xml.bind.annotation.XmlType;
+import jakarta.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
+import org.jvnet.jaxb.lang.CopyStrategy;
+import org.jvnet.jaxb.lang.CopyTo;
+import org.jvnet.jaxb.lang.Equals;
+import org.jvnet.jaxb.lang.EqualsStrategy;
+import org.jvnet.jaxb.lang.JAXBCopyStrategy;
+import org.jvnet.jaxb.lang.JAXBEqualsStrategy;
+import org.jvnet.jaxb.lang.JAXBToStringStrategy;
+import org.jvnet.jaxb.lang.ToString;
+import org.jvnet.jaxb.lang.ToStringStrategy;
+import org.jvnet.jaxb.locator.ObjectLocator;
+import org.jvnet.jaxb.locator.util.LocatorUtils;
 import org.openestate.is24.restapi.xml.Adapter1;
 import org.openestate.is24.restapi.xml.Adapter3;
 import org.openestate.is24.restapi.xml.Adapter5;
@@ -35,23 +34,23 @@ import org.openestate.is24.restapi.xml.common.YesNotApplicableType;
 
 
 /**
- * Eigenschaften f\u00fcr den Immobilientyp Altenpflege
+ * Eigenschaften für den Immobilientyp Altenpflege
  * 
- * <p>Java class for SeniorCare complex type.
+ * <p>Java class for SeniorCare complex type</p>.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>The following schema fragment specifies the expected content contained within this class.</p>
  * 
- * <pre>
- * &lt;complexType name="SeniorCare"&gt;
- *   &lt;complexContent&gt;
- *     &lt;extension base="{http://rest.immobilienscout24.de/schema/offer/realestates/1.0}RealEstate"&gt;
- *       &lt;sequence&gt;
- *         &lt;group ref="{http://rest.immobilienscout24.de/schema/common/1.0}ExtendedSeniorCareGroup"/&gt;
- *       &lt;/sequence&gt;
- *     &lt;/extension&gt;
- *   &lt;/complexContent&gt;
- * &lt;/complexType&gt;
- * </pre>
+ * <pre>{@code
+ * <complexType name="SeniorCare">
+ *   <complexContent>
+ *     <extension base="{http://rest.immobilienscout24.de/schema/offer/realestates/1.0}RealEstate">
+ *       <sequence>
+ *         <group ref="{http://rest.immobilienscout24.de/schema/common/1.0}ExtendedSeniorCareGroup"/>
+ *       </sequence>
+ *     </extension>
+ *   </complexContent>
+ * </complexType>
+ * }</pre>
  * 
  * 
  */
@@ -94,143 +93,284 @@ import org.openestate.is24.restapi.xml.common.YesNotApplicableType;
     "balconyAvailable",
     "branchEntry"
 })
-@Generated(value = "com.sun.tools.xjc.Driver", date = "2021-08-07T09:44:49+02:00", comments = "JAXB RI v2.3.0")
+@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.9", date = "2026-08-26T20:20:00+02:00")
 public class SeniorCare
     extends RealEstate
-    implements Serializable, Cloneable, CopyTo2, Equals2, ToString2
+    implements Serializable, Cloneable, CopyTo, Equals, ToString
 {
 
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-08-07T09:44:49+02:00", comments = "JAXB RI v2.3.0")
+    /**
+     * Kurzbeschreibung
+     * 
+     */
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.9", date = "2026-08-26T20:20:00+02:00")
     protected String shortDescription;
+    /**
+     * Haustiere erlaubt
+     * 
+     */
     @XmlElement(required = true)
     @XmlSchemaType(name = "string")
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-08-07T09:44:49+02:00", comments = "JAXB RI v2.3.0")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.9", date = "2026-08-26T20:20:00+02:00")
     protected PetsAllowedType petsAllowed;
+    /**
+     * Probewohnen
+     * 
+     */
     @XmlElement(required = true)
     @XmlSchemaType(name = "string")
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-08-07T09:44:49+02:00", comments = "JAXB RI v2.3.0")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.9", date = "2026-08-26T20:20:00+02:00")
     protected YesNotApplicableType trialLivingPossible;
     @XmlElement(required = true)
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-08-07T09:44:49+02:00", comments = "JAXB RI v2.3.0")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.9", date = "2026-08-26T20:20:00+02:00")
     protected CareTypes careTypes;
+    /**
+     * Pflegestufe
+     * 
+     */
     @XmlElement(required = true)
     @XmlSchemaType(name = "string")
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-08-07T09:44:49+02:00", comments = "JAXB RI v2.3.0")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.9", date = "2026-08-26T20:20:00+02:00")
     protected CareLevelExpose careLevel;
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-08-07T09:44:49+02:00", comments = "JAXB RI v2.3.0")
+    /**
+     * Preis; die Attribute geben die Art, die Währung und den Intervall
+     *                         an
+     * 
+     */
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.9", date = "2026-08-26T20:20:00+02:00")
     protected Price price;
+    /**
+     * Bettenanzahl
+     * 
+     */
     @XmlElement(type = String.class)
     @XmlJavaTypeAdapter(Adapter5 .class)
     @XmlSchemaType(name = "int")
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-08-07T09:44:49+02:00", comments = "JAXB RI v2.3.0")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.9", date = "2026-08-26T20:20:00+02:00")
     protected Long numberOfBeds;
+    /**
+     * Eroeffnung/Bezug
+     * 
+     */
     @XmlElement(type = String.class)
     @XmlJavaTypeAdapter(Adapter3 .class)
     @XmlSchemaType(name = "date")
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-08-07T09:44:49+02:00", comments = "JAXB RI v2.3.0")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.9", date = "2026-08-26T20:20:00+02:00")
     protected Calendar opening;
+    /**
+     * Pflege von Demenz Patienten
+     * 
+     */
     @XmlSchemaType(name = "string")
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-08-07T09:44:49+02:00", comments = "JAXB RI v2.3.0")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.9", date = "2026-08-26T20:20:00+02:00")
     protected YesNotApplicableType careOfDementia;
+    /**
+     * Pflege von kuenstlicher Beatmung
+     * 
+     */
     @XmlSchemaType(name = "string")
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-08-07T09:44:49+02:00", comments = "JAXB RI v2.3.0")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.9", date = "2026-08-26T20:20:00+02:00")
     protected YesNotApplicableType careOfArtificialRespiration;
+    /**
+     * Pflege von Wachkoma
+     * 
+     */
     @XmlSchemaType(name = "string")
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-08-07T09:44:49+02:00", comments = "JAXB RI v2.3.0")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.9", date = "2026-08-26T20:20:00+02:00")
     protected YesNotApplicableType careOfComaVigil;
+    /**
+     * Pflege von Schlaganfall
+     * 
+     */
     @XmlSchemaType(name = "string")
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-08-07T09:44:49+02:00", comments = "JAXB RI v2.3.0")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.9", date = "2026-08-26T20:20:00+02:00")
     protected YesNotApplicableType careOfStroke;
+    /**
+     * Pflege von Parkinson Patienten
+     * 
+     */
     @XmlSchemaType(name = "string")
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-08-07T09:44:49+02:00", comments = "JAXB RI v2.3.0")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.9", date = "2026-08-26T20:20:00+02:00")
     protected YesNotApplicableType careOfParkinson;
+    /**
+     * Pflege von Alzheimer Patienten
+     * 
+     */
     @XmlSchemaType(name = "string")
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-08-07T09:44:49+02:00", comments = "JAXB RI v2.3.0")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.9", date = "2026-08-26T20:20:00+02:00")
     protected YesNotApplicableType careOfAlzheimer;
+    /**
+     * Pflege von Multipler Sklerosis
+     * 
+     */
     @XmlSchemaType(name = "string")
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-08-07T09:44:49+02:00", comments = "JAXB RI v2.3.0")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.9", date = "2026-08-26T20:20:00+02:00")
     protected YesNotApplicableType careOfMultipleSclerosis;
+    /**
+     * Hauseigene Küche verfügbar
+     * 
+     */
     @XmlSchemaType(name = "string")
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-08-07T09:44:49+02:00", comments = "JAXB RI v2.3.0")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.9", date = "2026-08-26T20:20:00+02:00")
     protected YesNotApplicableType kitchenAvailable;
+    /**
+     * Zimmertyp
+     * 
+     */
     @XmlSchemaType(name = "string")
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-08-07T09:44:49+02:00", comments = "JAXB RI v2.3.0")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.9", date = "2026-08-26T20:20:00+02:00")
     protected RoomType roomType;
+    /**
+     * Therapieangebot verfügbar
+     * 
+     */
     @XmlSchemaType(name = "string")
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-08-07T09:44:49+02:00", comments = "JAXB RI v2.3.0")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.9", date = "2026-08-26T20:20:00+02:00")
     protected YesNotApplicableType therapyOfferingsAvailable;
+    /**
+     * Barrierefrei
+     * 
+     */
     @XmlSchemaType(name = "string")
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-08-07T09:44:49+02:00", comments = "JAXB RI v2.3.0")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.9", date = "2026-08-26T20:20:00+02:00")
     protected YesNotApplicableType barrierFree;
+    /**
+     * Anzahl betreute Wohnungen
+     * 
+     */
     @XmlElement(type = String.class)
     @XmlJavaTypeAdapter(Adapter5 .class)
     @XmlSchemaType(name = "int")
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-08-07T09:44:49+02:00", comments = "JAXB RI v2.3.0")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.9", date = "2026-08-26T20:20:00+02:00")
     protected Long numberOfLookedAfterApartments;
+    /**
+     * Anzahl Pflegeplätze
+     * 
+     */
     @XmlElement(type = String.class)
     @XmlJavaTypeAdapter(Adapter5 .class)
     @XmlSchemaType(name = "int")
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-08-07T09:44:49+02:00", comments = "JAXB RI v2.3.0")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.9", date = "2026-08-26T20:20:00+02:00")
     protected Long numberOfNursingPlaces;
+    /**
+     * Wohnfläche von
+     * 
+     */
     @XmlElement(type = String.class)
     @XmlJavaTypeAdapter(Adapter1 .class)
     @XmlSchemaType(name = "double")
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-08-07T09:44:49+02:00", comments = "JAXB RI v2.3.0")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.9", date = "2026-08-26T20:20:00+02:00")
     protected BigDecimal livingSpaceFrom;
+    /**
+     * Wohnfläche bis
+     * 
+     */
     @XmlElement(type = String.class)
     @XmlJavaTypeAdapter(Adapter1 .class)
     @XmlSchemaType(name = "double")
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-08-07T09:44:49+02:00", comments = "JAXB RI v2.3.0")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.9", date = "2026-08-26T20:20:00+02:00")
     protected BigDecimal livingSpaceTo;
+    /**
+     * Behindertengerecht
+     * 
+     */
     @XmlSchemaType(name = "string")
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-08-07T09:44:49+02:00", comments = "JAXB RI v2.3.0")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.9", date = "2026-08-26T20:20:00+02:00")
     protected YesNotApplicableType handicappedAccessible;
+    /**
+     * Gästeappartments verfügbar
+     * 
+     */
     @XmlSchemaType(name = "string")
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-08-07T09:44:49+02:00", comments = "JAXB RI v2.3.0")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.9", date = "2026-08-26T20:20:00+02:00")
     protected YesNotApplicableType guestApartmentsAvailable;
+    /**
+     * Restaurant/ Café verfügbar
+     * 
+     */
     @XmlSchemaType(name = "string")
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-08-07T09:44:49+02:00", comments = "JAXB RI v2.3.0")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.9", date = "2026-08-26T20:20:00+02:00")
     protected YesNotApplicableType restaurantAvailable;
+    /**
+     * Eigene Kochmöglichkeit
+     * 
+     */
     @XmlSchemaType(name = "string")
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-08-07T09:44:49+02:00", comments = "JAXB RI v2.3.0")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.9", date = "2026-08-26T20:20:00+02:00")
     protected YesNotApplicableType cookingFacilitiesAvailable;
+    /**
+     * Mitnahme eigener Möbel möglich
+     * 
+     */
     @XmlSchemaType(name = "string")
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-08-07T09:44:49+02:00", comments = "JAXB RI v2.3.0")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.9", date = "2026-08-26T20:20:00+02:00")
     protected YesNotApplicableType ownFurniturePossible;
+    /**
+     * Reinigungsservice verfügbar
+     * 
+     */
     @XmlSchemaType(name = "string")
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-08-07T09:44:49+02:00", comments = "JAXB RI v2.3.0")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.9", date = "2026-08-26T20:20:00+02:00")
     protected YesNotApplicableType cleaningServiceAvailable;
+    /**
+     * Einkaufsmöglichkeiten im Haus
+     * 
+     */
     @XmlSchemaType(name = "string")
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-08-07T09:44:49+02:00", comments = "JAXB RI v2.3.0")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.9", date = "2026-08-26T20:20:00+02:00")
     protected YesNotApplicableType shoppingFacilitiesAvailable;
+    /**
+     *  24 Stunden Sicherheit
+     * 
+     */
     @XmlSchemaType(name = "string")
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-08-07T09:44:49+02:00", comments = "JAXB RI v2.3.0")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.9", date = "2026-08-26T20:20:00+02:00")
     protected YesNotApplicableType security24Hours;
+    /**
+     * Kulturprogramm verfügbar
+     * 
+     */
     @XmlSchemaType(name = "string")
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-08-07T09:44:49+02:00", comments = "JAXB RI v2.3.0")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.9", date = "2026-08-26T20:20:00+02:00")
     protected YesNotApplicableType culturalProgramAvailable;
+    /**
+     * Freizeitaktivitäten verfügbar
+     * 
+     */
     @XmlSchemaType(name = "string")
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-08-07T09:44:49+02:00", comments = "JAXB RI v2.3.0")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.9", date = "2026-08-26T20:20:00+02:00")
     protected YesNotApplicableType leisureActivitiesAvailable;
+    /**
+     * Religiöse Angebote
+     * 
+     */
     @XmlSchemaType(name = "string")
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-08-07T09:44:49+02:00", comments = "JAXB RI v2.3.0")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.9", date = "2026-08-26T20:20:00+02:00")
     protected YesNotApplicableType religiousOfferingsAvailable;
+    /**
+     * Zimmertyp
+     * 
+     */
     @XmlSchemaType(name = "string")
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-08-07T09:44:49+02:00", comments = "JAXB RI v2.3.0")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.9", date = "2026-08-26T20:20:00+02:00")
     protected BalconyAvailableType balconyAvailable;
+    /**
+     * Branchenbucheintrag
+     * 
+     */
     @XmlElement(defaultValue = "false")
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-08-07T09:44:49+02:00", comments = "JAXB RI v2.3.0")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.9", date = "2026-08-26T20:20:00+02:00")
     protected Boolean branchEntry;
 
     /**
-     * Gets the value of the shortDescription property.
+     * Kurzbeschreibung
      * 
      * @return
      *     possible object is
      *     {@link String }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-08-07T09:44:49+02:00", comments = "JAXB RI v2.3.0")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.9", date = "2026-08-26T20:20:00+02:00")
     public String getShortDescription() {
         return shortDescription;
     }
@@ -242,21 +382,22 @@ public class SeniorCare
      *     allowed object is
      *     {@link String }
      *     
+     * @see #getShortDescription()
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-08-07T09:44:49+02:00", comments = "JAXB RI v2.3.0")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.9", date = "2026-08-26T20:20:00+02:00")
     public void setShortDescription(String value) {
         this.shortDescription = value;
     }
 
     /**
-     * Gets the value of the petsAllowed property.
+     * Haustiere erlaubt
      * 
      * @return
      *     possible object is
      *     {@link PetsAllowedType }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-08-07T09:44:49+02:00", comments = "JAXB RI v2.3.0")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.9", date = "2026-08-26T20:20:00+02:00")
     public PetsAllowedType getPetsAllowed() {
         return petsAllowed;
     }
@@ -268,21 +409,22 @@ public class SeniorCare
      *     allowed object is
      *     {@link PetsAllowedType }
      *     
+     * @see #getPetsAllowed()
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-08-07T09:44:49+02:00", comments = "JAXB RI v2.3.0")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.9", date = "2026-08-26T20:20:00+02:00")
     public void setPetsAllowed(PetsAllowedType value) {
         this.petsAllowed = value;
     }
 
     /**
-     * Gets the value of the trialLivingPossible property.
+     * Probewohnen
      * 
      * @return
      *     possible object is
      *     {@link YesNotApplicableType }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-08-07T09:44:49+02:00", comments = "JAXB RI v2.3.0")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.9", date = "2026-08-26T20:20:00+02:00")
     public YesNotApplicableType getTrialLivingPossible() {
         return trialLivingPossible;
     }
@@ -294,8 +436,9 @@ public class SeniorCare
      *     allowed object is
      *     {@link YesNotApplicableType }
      *     
+     * @see #getTrialLivingPossible()
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-08-07T09:44:49+02:00", comments = "JAXB RI v2.3.0")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.9", date = "2026-08-26T20:20:00+02:00")
     public void setTrialLivingPossible(YesNotApplicableType value) {
         this.trialLivingPossible = value;
     }
@@ -308,7 +451,7 @@ public class SeniorCare
      *     {@link CareTypes }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-08-07T09:44:49+02:00", comments = "JAXB RI v2.3.0")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.9", date = "2026-08-26T20:20:00+02:00")
     public CareTypes getCareTypes() {
         return careTypes;
     }
@@ -321,20 +464,20 @@ public class SeniorCare
      *     {@link CareTypes }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-08-07T09:44:49+02:00", comments = "JAXB RI v2.3.0")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.9", date = "2026-08-26T20:20:00+02:00")
     public void setCareTypes(CareTypes value) {
         this.careTypes = value;
     }
 
     /**
-     * Gets the value of the careLevel property.
+     * Pflegestufe
      * 
      * @return
      *     possible object is
      *     {@link CareLevelExpose }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-08-07T09:44:49+02:00", comments = "JAXB RI v2.3.0")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.9", date = "2026-08-26T20:20:00+02:00")
     public CareLevelExpose getCareLevel() {
         return careLevel;
     }
@@ -346,21 +489,23 @@ public class SeniorCare
      *     allowed object is
      *     {@link CareLevelExpose }
      *     
+     * @see #getCareLevel()
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-08-07T09:44:49+02:00", comments = "JAXB RI v2.3.0")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.9", date = "2026-08-26T20:20:00+02:00")
     public void setCareLevel(CareLevelExpose value) {
         this.careLevel = value;
     }
 
     /**
-     * Gets the value of the price property.
+     * Preis; die Attribute geben die Art, die Währung und den Intervall
+     *                         an
      * 
      * @return
      *     possible object is
      *     {@link Price }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-08-07T09:44:49+02:00", comments = "JAXB RI v2.3.0")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.9", date = "2026-08-26T20:20:00+02:00")
     public Price getPrice() {
         return price;
     }
@@ -372,21 +517,22 @@ public class SeniorCare
      *     allowed object is
      *     {@link Price }
      *     
+     * @see #getPrice()
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-08-07T09:44:49+02:00", comments = "JAXB RI v2.3.0")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.9", date = "2026-08-26T20:20:00+02:00")
     public void setPrice(Price value) {
         this.price = value;
     }
 
     /**
-     * Gets the value of the numberOfBeds property.
+     * Bettenanzahl
      * 
      * @return
      *     possible object is
-     *     {@link String }
+     *     {@link Long }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-08-07T09:44:49+02:00", comments = "JAXB RI v2.3.0")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.9", date = "2026-08-26T20:20:00+02:00")
     public Long getNumberOfBeds() {
         return numberOfBeds;
     }
@@ -396,23 +542,24 @@ public class SeniorCare
      * 
      * @param value
      *     allowed object is
-     *     {@link String }
+     *     {@link Long }
      *     
+     * @see #getNumberOfBeds()
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-08-07T09:44:49+02:00", comments = "JAXB RI v2.3.0")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.9", date = "2026-08-26T20:20:00+02:00")
     public void setNumberOfBeds(Long value) {
         this.numberOfBeds = value;
     }
 
     /**
-     * Gets the value of the opening property.
+     * Eroeffnung/Bezug
      * 
      * @return
      *     possible object is
-     *     {@link String }
+     *     {@link Calendar }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-08-07T09:44:49+02:00", comments = "JAXB RI v2.3.0")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.9", date = "2026-08-26T20:20:00+02:00")
     public Calendar getOpening() {
         return opening;
     }
@@ -422,23 +569,24 @@ public class SeniorCare
      * 
      * @param value
      *     allowed object is
-     *     {@link String }
+     *     {@link Calendar }
      *     
+     * @see #getOpening()
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-08-07T09:44:49+02:00", comments = "JAXB RI v2.3.0")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.9", date = "2026-08-26T20:20:00+02:00")
     public void setOpening(Calendar value) {
         this.opening = value;
     }
 
     /**
-     * Gets the value of the careOfDementia property.
+     * Pflege von Demenz Patienten
      * 
      * @return
      *     possible object is
      *     {@link YesNotApplicableType }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-08-07T09:44:49+02:00", comments = "JAXB RI v2.3.0")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.9", date = "2026-08-26T20:20:00+02:00")
     public YesNotApplicableType getCareOfDementia() {
         return careOfDementia;
     }
@@ -450,21 +598,22 @@ public class SeniorCare
      *     allowed object is
      *     {@link YesNotApplicableType }
      *     
+     * @see #getCareOfDementia()
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-08-07T09:44:49+02:00", comments = "JAXB RI v2.3.0")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.9", date = "2026-08-26T20:20:00+02:00")
     public void setCareOfDementia(YesNotApplicableType value) {
         this.careOfDementia = value;
     }
 
     /**
-     * Gets the value of the careOfArtificialRespiration property.
+     * Pflege von kuenstlicher Beatmung
      * 
      * @return
      *     possible object is
      *     {@link YesNotApplicableType }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-08-07T09:44:49+02:00", comments = "JAXB RI v2.3.0")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.9", date = "2026-08-26T20:20:00+02:00")
     public YesNotApplicableType getCareOfArtificialRespiration() {
         return careOfArtificialRespiration;
     }
@@ -476,21 +625,22 @@ public class SeniorCare
      *     allowed object is
      *     {@link YesNotApplicableType }
      *     
+     * @see #getCareOfArtificialRespiration()
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-08-07T09:44:49+02:00", comments = "JAXB RI v2.3.0")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.9", date = "2026-08-26T20:20:00+02:00")
     public void setCareOfArtificialRespiration(YesNotApplicableType value) {
         this.careOfArtificialRespiration = value;
     }
 
     /**
-     * Gets the value of the careOfComaVigil property.
+     * Pflege von Wachkoma
      * 
      * @return
      *     possible object is
      *     {@link YesNotApplicableType }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-08-07T09:44:49+02:00", comments = "JAXB RI v2.3.0")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.9", date = "2026-08-26T20:20:00+02:00")
     public YesNotApplicableType getCareOfComaVigil() {
         return careOfComaVigil;
     }
@@ -502,21 +652,22 @@ public class SeniorCare
      *     allowed object is
      *     {@link YesNotApplicableType }
      *     
+     * @see #getCareOfComaVigil()
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-08-07T09:44:49+02:00", comments = "JAXB RI v2.3.0")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.9", date = "2026-08-26T20:20:00+02:00")
     public void setCareOfComaVigil(YesNotApplicableType value) {
         this.careOfComaVigil = value;
     }
 
     /**
-     * Gets the value of the careOfStroke property.
+     * Pflege von Schlaganfall
      * 
      * @return
      *     possible object is
      *     {@link YesNotApplicableType }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-08-07T09:44:49+02:00", comments = "JAXB RI v2.3.0")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.9", date = "2026-08-26T20:20:00+02:00")
     public YesNotApplicableType getCareOfStroke() {
         return careOfStroke;
     }
@@ -528,21 +679,22 @@ public class SeniorCare
      *     allowed object is
      *     {@link YesNotApplicableType }
      *     
+     * @see #getCareOfStroke()
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-08-07T09:44:49+02:00", comments = "JAXB RI v2.3.0")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.9", date = "2026-08-26T20:20:00+02:00")
     public void setCareOfStroke(YesNotApplicableType value) {
         this.careOfStroke = value;
     }
 
     /**
-     * Gets the value of the careOfParkinson property.
+     * Pflege von Parkinson Patienten
      * 
      * @return
      *     possible object is
      *     {@link YesNotApplicableType }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-08-07T09:44:49+02:00", comments = "JAXB RI v2.3.0")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.9", date = "2026-08-26T20:20:00+02:00")
     public YesNotApplicableType getCareOfParkinson() {
         return careOfParkinson;
     }
@@ -554,21 +706,22 @@ public class SeniorCare
      *     allowed object is
      *     {@link YesNotApplicableType }
      *     
+     * @see #getCareOfParkinson()
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-08-07T09:44:49+02:00", comments = "JAXB RI v2.3.0")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.9", date = "2026-08-26T20:20:00+02:00")
     public void setCareOfParkinson(YesNotApplicableType value) {
         this.careOfParkinson = value;
     }
 
     /**
-     * Gets the value of the careOfAlzheimer property.
+     * Pflege von Alzheimer Patienten
      * 
      * @return
      *     possible object is
      *     {@link YesNotApplicableType }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-08-07T09:44:49+02:00", comments = "JAXB RI v2.3.0")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.9", date = "2026-08-26T20:20:00+02:00")
     public YesNotApplicableType getCareOfAlzheimer() {
         return careOfAlzheimer;
     }
@@ -580,21 +733,22 @@ public class SeniorCare
      *     allowed object is
      *     {@link YesNotApplicableType }
      *     
+     * @see #getCareOfAlzheimer()
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-08-07T09:44:49+02:00", comments = "JAXB RI v2.3.0")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.9", date = "2026-08-26T20:20:00+02:00")
     public void setCareOfAlzheimer(YesNotApplicableType value) {
         this.careOfAlzheimer = value;
     }
 
     /**
-     * Gets the value of the careOfMultipleSclerosis property.
+     * Pflege von Multipler Sklerosis
      * 
      * @return
      *     possible object is
      *     {@link YesNotApplicableType }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-08-07T09:44:49+02:00", comments = "JAXB RI v2.3.0")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.9", date = "2026-08-26T20:20:00+02:00")
     public YesNotApplicableType getCareOfMultipleSclerosis() {
         return careOfMultipleSclerosis;
     }
@@ -606,21 +760,22 @@ public class SeniorCare
      *     allowed object is
      *     {@link YesNotApplicableType }
      *     
+     * @see #getCareOfMultipleSclerosis()
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-08-07T09:44:49+02:00", comments = "JAXB RI v2.3.0")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.9", date = "2026-08-26T20:20:00+02:00")
     public void setCareOfMultipleSclerosis(YesNotApplicableType value) {
         this.careOfMultipleSclerosis = value;
     }
 
     /**
-     * Gets the value of the kitchenAvailable property.
+     * Hauseigene Küche verfügbar
      * 
      * @return
      *     possible object is
      *     {@link YesNotApplicableType }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-08-07T09:44:49+02:00", comments = "JAXB RI v2.3.0")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.9", date = "2026-08-26T20:20:00+02:00")
     public YesNotApplicableType getKitchenAvailable() {
         return kitchenAvailable;
     }
@@ -632,21 +787,22 @@ public class SeniorCare
      *     allowed object is
      *     {@link YesNotApplicableType }
      *     
+     * @see #getKitchenAvailable()
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-08-07T09:44:49+02:00", comments = "JAXB RI v2.3.0")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.9", date = "2026-08-26T20:20:00+02:00")
     public void setKitchenAvailable(YesNotApplicableType value) {
         this.kitchenAvailable = value;
     }
 
     /**
-     * Gets the value of the roomType property.
+     * Zimmertyp
      * 
      * @return
      *     possible object is
      *     {@link RoomType }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-08-07T09:44:49+02:00", comments = "JAXB RI v2.3.0")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.9", date = "2026-08-26T20:20:00+02:00")
     public RoomType getRoomType() {
         return roomType;
     }
@@ -658,21 +814,22 @@ public class SeniorCare
      *     allowed object is
      *     {@link RoomType }
      *     
+     * @see #getRoomType()
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-08-07T09:44:49+02:00", comments = "JAXB RI v2.3.0")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.9", date = "2026-08-26T20:20:00+02:00")
     public void setRoomType(RoomType value) {
         this.roomType = value;
     }
 
     /**
-     * Gets the value of the therapyOfferingsAvailable property.
+     * Therapieangebot verfügbar
      * 
      * @return
      *     possible object is
      *     {@link YesNotApplicableType }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-08-07T09:44:49+02:00", comments = "JAXB RI v2.3.0")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.9", date = "2026-08-26T20:20:00+02:00")
     public YesNotApplicableType getTherapyOfferingsAvailable() {
         return therapyOfferingsAvailable;
     }
@@ -684,21 +841,22 @@ public class SeniorCare
      *     allowed object is
      *     {@link YesNotApplicableType }
      *     
+     * @see #getTherapyOfferingsAvailable()
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-08-07T09:44:49+02:00", comments = "JAXB RI v2.3.0")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.9", date = "2026-08-26T20:20:00+02:00")
     public void setTherapyOfferingsAvailable(YesNotApplicableType value) {
         this.therapyOfferingsAvailable = value;
     }
 
     /**
-     * Gets the value of the barrierFree property.
+     * Barrierefrei
      * 
      * @return
      *     possible object is
      *     {@link YesNotApplicableType }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-08-07T09:44:49+02:00", comments = "JAXB RI v2.3.0")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.9", date = "2026-08-26T20:20:00+02:00")
     public YesNotApplicableType getBarrierFree() {
         return barrierFree;
     }
@@ -710,21 +868,22 @@ public class SeniorCare
      *     allowed object is
      *     {@link YesNotApplicableType }
      *     
+     * @see #getBarrierFree()
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-08-07T09:44:49+02:00", comments = "JAXB RI v2.3.0")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.9", date = "2026-08-26T20:20:00+02:00")
     public void setBarrierFree(YesNotApplicableType value) {
         this.barrierFree = value;
     }
 
     /**
-     * Gets the value of the numberOfLookedAfterApartments property.
+     * Anzahl betreute Wohnungen
      * 
      * @return
      *     possible object is
-     *     {@link String }
+     *     {@link Long }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-08-07T09:44:49+02:00", comments = "JAXB RI v2.3.0")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.9", date = "2026-08-26T20:20:00+02:00")
     public Long getNumberOfLookedAfterApartments() {
         return numberOfLookedAfterApartments;
     }
@@ -734,23 +893,24 @@ public class SeniorCare
      * 
      * @param value
      *     allowed object is
-     *     {@link String }
+     *     {@link Long }
      *     
+     * @see #getNumberOfLookedAfterApartments()
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-08-07T09:44:49+02:00", comments = "JAXB RI v2.3.0")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.9", date = "2026-08-26T20:20:00+02:00")
     public void setNumberOfLookedAfterApartments(Long value) {
         this.numberOfLookedAfterApartments = value;
     }
 
     /**
-     * Gets the value of the numberOfNursingPlaces property.
+     * Anzahl Pflegeplätze
      * 
      * @return
      *     possible object is
-     *     {@link String }
+     *     {@link Long }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-08-07T09:44:49+02:00", comments = "JAXB RI v2.3.0")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.9", date = "2026-08-26T20:20:00+02:00")
     public Long getNumberOfNursingPlaces() {
         return numberOfNursingPlaces;
     }
@@ -760,23 +920,24 @@ public class SeniorCare
      * 
      * @param value
      *     allowed object is
-     *     {@link String }
+     *     {@link Long }
      *     
+     * @see #getNumberOfNursingPlaces()
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-08-07T09:44:49+02:00", comments = "JAXB RI v2.3.0")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.9", date = "2026-08-26T20:20:00+02:00")
     public void setNumberOfNursingPlaces(Long value) {
         this.numberOfNursingPlaces = value;
     }
 
     /**
-     * Gets the value of the livingSpaceFrom property.
+     * Wohnfläche von
      * 
      * @return
      *     possible object is
-     *     {@link String }
+     *     {@link BigDecimal }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-08-07T09:44:49+02:00", comments = "JAXB RI v2.3.0")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.9", date = "2026-08-26T20:20:00+02:00")
     public BigDecimal getLivingSpaceFrom() {
         return livingSpaceFrom;
     }
@@ -786,23 +947,24 @@ public class SeniorCare
      * 
      * @param value
      *     allowed object is
-     *     {@link String }
+     *     {@link BigDecimal }
      *     
+     * @see #getLivingSpaceFrom()
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-08-07T09:44:49+02:00", comments = "JAXB RI v2.3.0")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.9", date = "2026-08-26T20:20:00+02:00")
     public void setLivingSpaceFrom(BigDecimal value) {
         this.livingSpaceFrom = value;
     }
 
     /**
-     * Gets the value of the livingSpaceTo property.
+     * Wohnfläche bis
      * 
      * @return
      *     possible object is
-     *     {@link String }
+     *     {@link BigDecimal }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-08-07T09:44:49+02:00", comments = "JAXB RI v2.3.0")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.9", date = "2026-08-26T20:20:00+02:00")
     public BigDecimal getLivingSpaceTo() {
         return livingSpaceTo;
     }
@@ -812,23 +974,24 @@ public class SeniorCare
      * 
      * @param value
      *     allowed object is
-     *     {@link String }
+     *     {@link BigDecimal }
      *     
+     * @see #getLivingSpaceTo()
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-08-07T09:44:49+02:00", comments = "JAXB RI v2.3.0")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.9", date = "2026-08-26T20:20:00+02:00")
     public void setLivingSpaceTo(BigDecimal value) {
         this.livingSpaceTo = value;
     }
 
     /**
-     * Gets the value of the handicappedAccessible property.
+     * Behindertengerecht
      * 
      * @return
      *     possible object is
      *     {@link YesNotApplicableType }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-08-07T09:44:49+02:00", comments = "JAXB RI v2.3.0")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.9", date = "2026-08-26T20:20:00+02:00")
     public YesNotApplicableType getHandicappedAccessible() {
         return handicappedAccessible;
     }
@@ -840,21 +1003,22 @@ public class SeniorCare
      *     allowed object is
      *     {@link YesNotApplicableType }
      *     
+     * @see #getHandicappedAccessible()
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-08-07T09:44:49+02:00", comments = "JAXB RI v2.3.0")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.9", date = "2026-08-26T20:20:00+02:00")
     public void setHandicappedAccessible(YesNotApplicableType value) {
         this.handicappedAccessible = value;
     }
 
     /**
-     * Gets the value of the guestApartmentsAvailable property.
+     * Gästeappartments verfügbar
      * 
      * @return
      *     possible object is
      *     {@link YesNotApplicableType }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-08-07T09:44:49+02:00", comments = "JAXB RI v2.3.0")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.9", date = "2026-08-26T20:20:00+02:00")
     public YesNotApplicableType getGuestApartmentsAvailable() {
         return guestApartmentsAvailable;
     }
@@ -866,21 +1030,22 @@ public class SeniorCare
      *     allowed object is
      *     {@link YesNotApplicableType }
      *     
+     * @see #getGuestApartmentsAvailable()
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-08-07T09:44:49+02:00", comments = "JAXB RI v2.3.0")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.9", date = "2026-08-26T20:20:00+02:00")
     public void setGuestApartmentsAvailable(YesNotApplicableType value) {
         this.guestApartmentsAvailable = value;
     }
 
     /**
-     * Gets the value of the restaurantAvailable property.
+     * Restaurant/ Café verfügbar
      * 
      * @return
      *     possible object is
      *     {@link YesNotApplicableType }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-08-07T09:44:49+02:00", comments = "JAXB RI v2.3.0")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.9", date = "2026-08-26T20:20:00+02:00")
     public YesNotApplicableType getRestaurantAvailable() {
         return restaurantAvailable;
     }
@@ -892,21 +1057,22 @@ public class SeniorCare
      *     allowed object is
      *     {@link YesNotApplicableType }
      *     
+     * @see #getRestaurantAvailable()
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-08-07T09:44:49+02:00", comments = "JAXB RI v2.3.0")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.9", date = "2026-08-26T20:20:00+02:00")
     public void setRestaurantAvailable(YesNotApplicableType value) {
         this.restaurantAvailable = value;
     }
 
     /**
-     * Gets the value of the cookingFacilitiesAvailable property.
+     * Eigene Kochmöglichkeit
      * 
      * @return
      *     possible object is
      *     {@link YesNotApplicableType }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-08-07T09:44:49+02:00", comments = "JAXB RI v2.3.0")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.9", date = "2026-08-26T20:20:00+02:00")
     public YesNotApplicableType getCookingFacilitiesAvailable() {
         return cookingFacilitiesAvailable;
     }
@@ -918,21 +1084,22 @@ public class SeniorCare
      *     allowed object is
      *     {@link YesNotApplicableType }
      *     
+     * @see #getCookingFacilitiesAvailable()
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-08-07T09:44:49+02:00", comments = "JAXB RI v2.3.0")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.9", date = "2026-08-26T20:20:00+02:00")
     public void setCookingFacilitiesAvailable(YesNotApplicableType value) {
         this.cookingFacilitiesAvailable = value;
     }
 
     /**
-     * Gets the value of the ownFurniturePossible property.
+     * Mitnahme eigener Möbel möglich
      * 
      * @return
      *     possible object is
      *     {@link YesNotApplicableType }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-08-07T09:44:49+02:00", comments = "JAXB RI v2.3.0")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.9", date = "2026-08-26T20:20:00+02:00")
     public YesNotApplicableType getOwnFurniturePossible() {
         return ownFurniturePossible;
     }
@@ -944,21 +1111,22 @@ public class SeniorCare
      *     allowed object is
      *     {@link YesNotApplicableType }
      *     
+     * @see #getOwnFurniturePossible()
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-08-07T09:44:49+02:00", comments = "JAXB RI v2.3.0")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.9", date = "2026-08-26T20:20:00+02:00")
     public void setOwnFurniturePossible(YesNotApplicableType value) {
         this.ownFurniturePossible = value;
     }
 
     /**
-     * Gets the value of the cleaningServiceAvailable property.
+     * Reinigungsservice verfügbar
      * 
      * @return
      *     possible object is
      *     {@link YesNotApplicableType }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-08-07T09:44:49+02:00", comments = "JAXB RI v2.3.0")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.9", date = "2026-08-26T20:20:00+02:00")
     public YesNotApplicableType getCleaningServiceAvailable() {
         return cleaningServiceAvailable;
     }
@@ -970,21 +1138,22 @@ public class SeniorCare
      *     allowed object is
      *     {@link YesNotApplicableType }
      *     
+     * @see #getCleaningServiceAvailable()
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-08-07T09:44:49+02:00", comments = "JAXB RI v2.3.0")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.9", date = "2026-08-26T20:20:00+02:00")
     public void setCleaningServiceAvailable(YesNotApplicableType value) {
         this.cleaningServiceAvailable = value;
     }
 
     /**
-     * Gets the value of the shoppingFacilitiesAvailable property.
+     * Einkaufsmöglichkeiten im Haus
      * 
      * @return
      *     possible object is
      *     {@link YesNotApplicableType }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-08-07T09:44:49+02:00", comments = "JAXB RI v2.3.0")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.9", date = "2026-08-26T20:20:00+02:00")
     public YesNotApplicableType getShoppingFacilitiesAvailable() {
         return shoppingFacilitiesAvailable;
     }
@@ -996,21 +1165,22 @@ public class SeniorCare
      *     allowed object is
      *     {@link YesNotApplicableType }
      *     
+     * @see #getShoppingFacilitiesAvailable()
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-08-07T09:44:49+02:00", comments = "JAXB RI v2.3.0")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.9", date = "2026-08-26T20:20:00+02:00")
     public void setShoppingFacilitiesAvailable(YesNotApplicableType value) {
         this.shoppingFacilitiesAvailable = value;
     }
 
     /**
-     * Gets the value of the security24Hours property.
+     *  24 Stunden Sicherheit
      * 
      * @return
      *     possible object is
      *     {@link YesNotApplicableType }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-08-07T09:44:49+02:00", comments = "JAXB RI v2.3.0")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.9", date = "2026-08-26T20:20:00+02:00")
     public YesNotApplicableType getSecurity24Hours() {
         return security24Hours;
     }
@@ -1022,21 +1192,22 @@ public class SeniorCare
      *     allowed object is
      *     {@link YesNotApplicableType }
      *     
+     * @see #getSecurity24Hours()
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-08-07T09:44:49+02:00", comments = "JAXB RI v2.3.0")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.9", date = "2026-08-26T20:20:00+02:00")
     public void setSecurity24Hours(YesNotApplicableType value) {
         this.security24Hours = value;
     }
 
     /**
-     * Gets the value of the culturalProgramAvailable property.
+     * Kulturprogramm verfügbar
      * 
      * @return
      *     possible object is
      *     {@link YesNotApplicableType }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-08-07T09:44:49+02:00", comments = "JAXB RI v2.3.0")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.9", date = "2026-08-26T20:20:00+02:00")
     public YesNotApplicableType getCulturalProgramAvailable() {
         return culturalProgramAvailable;
     }
@@ -1048,21 +1219,22 @@ public class SeniorCare
      *     allowed object is
      *     {@link YesNotApplicableType }
      *     
+     * @see #getCulturalProgramAvailable()
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-08-07T09:44:49+02:00", comments = "JAXB RI v2.3.0")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.9", date = "2026-08-26T20:20:00+02:00")
     public void setCulturalProgramAvailable(YesNotApplicableType value) {
         this.culturalProgramAvailable = value;
     }
 
     /**
-     * Gets the value of the leisureActivitiesAvailable property.
+     * Freizeitaktivitäten verfügbar
      * 
      * @return
      *     possible object is
      *     {@link YesNotApplicableType }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-08-07T09:44:49+02:00", comments = "JAXB RI v2.3.0")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.9", date = "2026-08-26T20:20:00+02:00")
     public YesNotApplicableType getLeisureActivitiesAvailable() {
         return leisureActivitiesAvailable;
     }
@@ -1074,21 +1246,22 @@ public class SeniorCare
      *     allowed object is
      *     {@link YesNotApplicableType }
      *     
+     * @see #getLeisureActivitiesAvailable()
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-08-07T09:44:49+02:00", comments = "JAXB RI v2.3.0")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.9", date = "2026-08-26T20:20:00+02:00")
     public void setLeisureActivitiesAvailable(YesNotApplicableType value) {
         this.leisureActivitiesAvailable = value;
     }
 
     /**
-     * Gets the value of the religiousOfferingsAvailable property.
+     * Religiöse Angebote
      * 
      * @return
      *     possible object is
      *     {@link YesNotApplicableType }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-08-07T09:44:49+02:00", comments = "JAXB RI v2.3.0")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.9", date = "2026-08-26T20:20:00+02:00")
     public YesNotApplicableType getReligiousOfferingsAvailable() {
         return religiousOfferingsAvailable;
     }
@@ -1100,21 +1273,22 @@ public class SeniorCare
      *     allowed object is
      *     {@link YesNotApplicableType }
      *     
+     * @see #getReligiousOfferingsAvailable()
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-08-07T09:44:49+02:00", comments = "JAXB RI v2.3.0")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.9", date = "2026-08-26T20:20:00+02:00")
     public void setReligiousOfferingsAvailable(YesNotApplicableType value) {
         this.religiousOfferingsAvailable = value;
     }
 
     /**
-     * Gets the value of the balconyAvailable property.
+     * Zimmertyp
      * 
      * @return
      *     possible object is
      *     {@link BalconyAvailableType }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-08-07T09:44:49+02:00", comments = "JAXB RI v2.3.0")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.9", date = "2026-08-26T20:20:00+02:00")
     public BalconyAvailableType getBalconyAvailable() {
         return balconyAvailable;
     }
@@ -1126,21 +1300,22 @@ public class SeniorCare
      *     allowed object is
      *     {@link BalconyAvailableType }
      *     
+     * @see #getBalconyAvailable()
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-08-07T09:44:49+02:00", comments = "JAXB RI v2.3.0")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.9", date = "2026-08-26T20:20:00+02:00")
     public void setBalconyAvailable(BalconyAvailableType value) {
         this.balconyAvailable = value;
     }
 
     /**
-     * Gets the value of the branchEntry property.
+     * Branchenbucheintrag
      * 
      * @return
      *     possible object is
      *     {@link Boolean }
      *     
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-08-07T09:44:49+02:00", comments = "JAXB RI v2.3.0")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.9", date = "2026-08-26T20:20:00+02:00")
     public Boolean getBranchEntry() {
         return branchEntry;
     }
@@ -1152,30 +1327,34 @@ public class SeniorCare
      *     allowed object is
      *     {@link Boolean }
      *     
+     * @see #getBranchEntry()
      */
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-08-07T09:44:49+02:00", comments = "JAXB RI v2.3.0")
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.9", date = "2026-08-26T20:20:00+02:00")
     public void setBranchEntry(Boolean value) {
         this.branchEntry = value;
     }
 
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-08-07T09:44:49+02:00", comments = "JAXB RI v2.3.0")
+    @Override
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.9", date = "2026-08-26T20:20:00+02:00")
     public String toString() {
-        final ToStringStrategy2 strategy = JAXBToStringStrategy.INSTANCE2;
+        final ToStringStrategy strategy = JAXBToStringStrategy.getInstance();
         final StringBuilder buffer = new StringBuilder();
         append(null, buffer, strategy);
         return buffer.toString();
     }
 
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-08-07T09:44:49+02:00", comments = "JAXB RI v2.3.0")
-    public StringBuilder append(ObjectLocator locator, StringBuilder buffer, ToStringStrategy2 strategy) {
+    @Override
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.9", date = "2026-08-26T20:20:00+02:00")
+    public StringBuilder append(ObjectLocator locator, StringBuilder buffer, ToStringStrategy strategy) {
         strategy.appendStart(locator, this, buffer);
         appendFields(locator, buffer, strategy);
         strategy.appendEnd(locator, this, buffer);
         return buffer;
     }
 
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-08-07T09:44:49+02:00", comments = "JAXB RI v2.3.0")
-    public StringBuilder appendFields(ObjectLocator locator, StringBuilder buffer, ToStringStrategy2 strategy) {
+    @Override
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.9", date = "2026-08-26T20:20:00+02:00")
+    public StringBuilder appendFields(ObjectLocator locator, StringBuilder buffer, ToStringStrategy strategy) {
         super.appendFields(locator, buffer, strategy);
         {
             String theShortDescription;
@@ -1360,19 +1539,22 @@ public class SeniorCare
         return buffer;
     }
 
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-08-07T09:44:49+02:00", comments = "JAXB RI v2.3.0")
+    @Override
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.9", date = "2026-08-26T20:20:00+02:00")
     public Object clone() {
         return copyTo(createNewInstance());
     }
 
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-08-07T09:44:49+02:00", comments = "JAXB RI v2.3.0")
+    @Override
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.9", date = "2026-08-26T20:20:00+02:00")
     public Object copyTo(Object target) {
-        final CopyStrategy2 strategy = JAXBCopyStrategy.INSTANCE2;
+        final CopyStrategy strategy = JAXBCopyStrategy.getInstance();
         return copyTo(null, target, strategy);
     }
 
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-08-07T09:44:49+02:00", comments = "JAXB RI v2.3.0")
-    public Object copyTo(ObjectLocator locator, Object target, CopyStrategy2 strategy) {
+    @Override
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.9", date = "2026-08-26T20:20:00+02:00")
+    public Object copyTo(ObjectLocator locator, Object target, CopyStrategy strategy) {
         final Object draftCopy = ((target == null)?createNewInstance():target);
         super.copyTo(locator, draftCopy, strategy);
         if (draftCopy instanceof SeniorCare) {
@@ -1849,13 +2031,15 @@ public class SeniorCare
         return draftCopy;
     }
 
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-08-07T09:44:49+02:00", comments = "JAXB RI v2.3.0")
+    @Override
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.9", date = "2026-08-26T20:20:00+02:00")
     public Object createNewInstance() {
         return new SeniorCare();
     }
 
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-08-07T09:44:49+02:00", comments = "JAXB RI v2.3.0")
-    public boolean equals(ObjectLocator thisLocator, ObjectLocator thatLocator, Object object, EqualsStrategy2 strategy) {
+    @Override
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.9", date = "2026-08-26T20:20:00+02:00")
+    public boolean equals(ObjectLocator thisLocator, ObjectLocator thatLocator, Object object, EqualsStrategy strategy) {
         if ((object == null)||(this.getClass()!= object.getClass())) {
             return false;
         }
@@ -2193,9 +2377,10 @@ public class SeniorCare
         return true;
     }
 
-    @Generated(value = "com.sun.tools.xjc.Driver", date = "2021-08-07T09:44:49+02:00", comments = "JAXB RI v2.3.0")
+    @Override
+    @Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.9", date = "2026-08-26T20:20:00+02:00")
     public boolean equals(Object object) {
-        final EqualsStrategy2 strategy = JAXBEqualsStrategy.INSTANCE2;
+        final EqualsStrategy strategy = JAXBEqualsStrategy.getInstance();
         return equals(null, null, object, strategy);
     }
 

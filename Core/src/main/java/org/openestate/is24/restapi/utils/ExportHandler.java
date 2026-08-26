@@ -28,7 +28,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.TreeMap;
-import javax.xml.bind.JAXBException;
+import jakarta.xml.bind.JAXBException;
 import oauth.signpost.exception.OAuthException;
 import org.apache.commons.codec.digest.DigestUtils;
 import org.apache.commons.io.IOUtils;

@@ -77,40 +77,21 @@ Requirements
 Dependencies
 ------------
 
--   Java 8 or newer
--   [commons-codec 1.15](https://commons.apache.org/proper/commons-codec/)
--   [commons-io 2.11.0](https://commons.apache.org/proper/commons-io/)
--   [commons-lang 3.12.0](https://commons.apache.org/proper/commons-lang/)
--   [commons-text 1.9](https://commons.apache.org/proper/commons-text/)
--   [Eclipse Implementation of JAXB 2.3.5](https://projects.eclipse.org/projects/ee4j.jaxb-impl)
--   [Jakarta Activation 1.2.2](https://projects.eclipse.org/projects/ee4j.jaf)
--   [Jakarta Annotations 1.3.5](https://projects.eclipse.org/projects/ee4j.ca)
--   [Jakarta XML Binding 2.3.3](https://projects.eclipse.org/projects/ee4j.jaxb)
--   [jaxb2-basics-runtime 0.12.0](https://github.com/highsource/jaxb2-basics)
+-   Java 21 or newer
+-   [commons-codec 1.22.1](https://commons.apache.org/proper/commons-codec/)
+-   [commons-io 2.22.0](https://commons.apache.org/proper/commons-io/)
+-   [commons-lang 3.20.0](https://commons.apache.org/proper/commons-lang/)
+-   [commons-text 1.15.0](https://commons.apache.org/proper/commons-text/)
+-   [Eclipse Implementation of JAXB 4.0.9](https://projects.eclipse.org/projects/ee4j.jaxb-impl)
+-   [Jakarta Annotations 3.0.0](https://projects.eclipse.org/projects/ee4j.ca)
+-   [Jakarta XML Binding 4.0.5](https://projects.eclipse.org/projects/ee4j.jaxb)
+-   [jaxb-plugins-runtime 4.0.16](https://github.com/highsource/jaxb-tools)
 -   [oauth-signpost 2.1.1](https://github.com/mttkay/signpost)
--   [SLF4J 1.7.30](https://www.slf4j.org/)
--   [Lorem 2.1](https://github.com/mdeanda/lorem) (only required by [`RandomRealEstateFactory.java`](Core/src/main/java/org/openestate/is24/restapi/utils/RandomRealEstateFactory.java))
+-   [SLF4J 2.0.18](https://www.slf4j.org/)
+-   [Lorem 2.2](https://github.com/mdeanda/lorem) (only required by [`RandomRealEstateFactory.java`](Core/src/main/java/org/openestate/is24/restapi/utils/RandomRealEstateFactory.java))
 -   [Apache HttpClient 4.5](https://hc.apache.org/httpcomponents-client-4.5.x/) (optional) with further dependencies:
     -   [commons-logging 1.2](https://commons.apache.org/proper/commons-logging/)
     -   [Apache HttpCore 4.4](https://hc.apache.org/httpcomponents-core-4.4.x/)
-
-
-Notes about JDK versions below 11
----------------------------------
-
-JAXB is bundled with JDK 8, was disabled / deprecated in JDK 9 & 10 and finally removed in JDK 11. Therefore, we're providing JAXB as an explicit dependency. See also ["JAXB on Java 9, 10, 11 and beyond"](https://www.jesperdj.com/2018/09/30/jaxb-on-java-9-10-11-and-beyond/). 
-
-It is recommended to use this library with JDK 11 as it should work out of the box. In case you're using JDK 8, you might need to follow one of these steps documented at ["JAXB Release Documentation"](https://javaee.github.io/jaxb-v2/doc/user-guide/release-documentation.html#deployment-migrating-jaxb-2-0-applications-to-javase-6):
-
-> JavaSE comes with JAXB 2.x API/implementation in `rt.jar`. Each version of JavaSE (6, 7, 8, ...) contains different version of JAXB 2.x API. Therefore, if you want to use different version of JAXB API/implementation than the one present in your version of JDK, you are required to override a portion of `rt.jar` with the new API. There are several ways to achieve this:
-> 
-> 1.    Place the `jakarta.xml.bind-api-X.Y.Z.jar` into `$JRE_HOME/lib/endorsed`. **Do not put other JAXB jars into the endorsed directory.** This essentially makes your JRE to "JRE X + JAXB 2.y". This would affect any other applications that use this JRE, and it's easy. On the other hand, in various scenarios you may not be able to alter the JRE.
-> 
-> 2.    Use the system property `java.endorsed.dirs` when you launch your application, and have it point to the directory which contains the `jakarta.xml.bind-api-X.Y.Z.jar` only. **The directory must not contain any other jaxb artifacts.** This allows you to use different version of JAXB for different applications. 
-> 
-> See the [endorsed directory mechanism](http://docs.oracle.com/javase/6/docs/technotes/guides/standards/) for more details.
-
-All provided dependencies should work with JDK 8. If compatibility problems occur, you might replace them with an earlier version.
 
 
 Limitations

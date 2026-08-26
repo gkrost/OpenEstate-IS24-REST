@@ -1,53 +1,53 @@
-
 package org.openestate.is24.restapi.xml.common;
 
-import javax.annotation.Generated;
-import javax.xml.bind.annotation.XmlEnum;
-import javax.xml.bind.annotation.XmlType;
+import jakarta.annotation.Generated;
+import jakarta.xml.bind.annotation.XmlEnum;
+import jakarta.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for EnergySourceEnev2014.
+ * Auflistung der wesentlichen Energieträger für Energiezertifikat
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * <p>
- * <pre>
- * &lt;simpleType name="EnergySourceEnev2014"&gt;
- *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
- *     &lt;enumeration value="NO_INFORMATION"/&gt;
- *     &lt;enumeration value="GEOTHERMAL"/&gt;
- *     &lt;enumeration value="SOLAR_HEATING"/&gt;
- *     &lt;enumeration value="PELLET_HEATING"/&gt;
- *     &lt;enumeration value="GAS"/&gt;
- *     &lt;enumeration value="OIL"/&gt;
- *     &lt;enumeration value="DISTRICT_HEATING"/&gt;
- *     &lt;enumeration value="ELECTRICITY"/&gt;
- *     &lt;enumeration value="COAL"/&gt;
- *     &lt;enumeration value="ACID_GAS"/&gt;
- *     &lt;enumeration value="SOUR_GAS"/&gt;
- *     &lt;enumeration value="LIQUID_GAS"/&gt;
- *     &lt;enumeration value="STEAM_DISTRICT_HEATING"/&gt;
- *     &lt;enumeration value="WOOD"/&gt;
- *     &lt;enumeration value="WOOD_CHIPS"/&gt;
- *     &lt;enumeration value="COAL_COKE"/&gt;
- *     &lt;enumeration value="LOCAL_HEATING"/&gt;
- *     &lt;enumeration value="HEAT_SUPPLY"/&gt;
- *     &lt;enumeration value="BIO_ENERGY"/&gt;
- *     &lt;enumeration value="WIND_ENERGY"/&gt;
- *     &lt;enumeration value="HYDRO_ENERGY"/&gt;
- *     &lt;enumeration value="ENVIRONMENTAL_THERMAL_ENERGY"/&gt;
- *     &lt;enumeration value="COMBINED_HEAT_AND_POWER_FOSSIL_FUELS"/&gt;
- *     &lt;enumeration value="COMBINED_HEAT_AND_POWER_RENEWABLE_ENERGY"/&gt;
- *     &lt;enumeration value="COMBINED_HEAT_AND_POWER_REGENERATIVE_ENERGY"/&gt;
- *     &lt;enumeration value="COMBINED_HEAT_AND_POWER_BIO_ENERGY"/&gt;
- *   &lt;/restriction&gt;
- * &lt;/simpleType&gt;
- * </pre>
+ * <p>Java class for EnergySourceEnev2014</p>.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.</p>
+ * <pre>{@code
+ * <simpleType name="EnergySourceEnev2014">
+ *   <restriction base="{http://www.w3.org/2001/XMLSchema}string">
+ *     <enumeration value="NO_INFORMATION"/>
+ *     <enumeration value="GEOTHERMAL"/>
+ *     <enumeration value="SOLAR_HEATING"/>
+ *     <enumeration value="PELLET_HEATING"/>
+ *     <enumeration value="GAS"/>
+ *     <enumeration value="OIL"/>
+ *     <enumeration value="DISTRICT_HEATING"/>
+ *     <enumeration value="ELECTRICITY"/>
+ *     <enumeration value="COAL"/>
+ *     <enumeration value="ACID_GAS"/>
+ *     <enumeration value="SOUR_GAS"/>
+ *     <enumeration value="LIQUID_GAS"/>
+ *     <enumeration value="STEAM_DISTRICT_HEATING"/>
+ *     <enumeration value="WOOD"/>
+ *     <enumeration value="WOOD_CHIPS"/>
+ *     <enumeration value="COAL_COKE"/>
+ *     <enumeration value="LOCAL_HEATING"/>
+ *     <enumeration value="HEAT_SUPPLY"/>
+ *     <enumeration value="BIO_ENERGY"/>
+ *     <enumeration value="WIND_ENERGY"/>
+ *     <enumeration value="HYDRO_ENERGY"/>
+ *     <enumeration value="ENVIRONMENTAL_THERMAL_ENERGY"/>
+ *     <enumeration value="COMBINED_HEAT_AND_POWER_FOSSIL_FUELS"/>
+ *     <enumeration value="COMBINED_HEAT_AND_POWER_RENEWABLE_ENERGY"/>
+ *     <enumeration value="COMBINED_HEAT_AND_POWER_REGENERATIVE_ENERGY"/>
+ *     <enumeration value="COMBINED_HEAT_AND_POWER_BIO_ENERGY"/>
+ *   </restriction>
+ * </simpleType>
+ * }</pre>
  * 
  */
 @XmlType(name = "EnergySourceEnev2014")
 @XmlEnum
-@Generated(value = "com.sun.tools.xjc.Driver", date = "2021-08-07T09:44:49+02:00", comments = "JAXB RI v2.3.0")
+@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.9", date = "2026-08-26T20:20:00+02:00")
 public enum EnergySourceEnev2014 {
 
 
@@ -58,7 +58,7 @@ public enum EnergySourceEnev2014 {
     NO_INFORMATION,
 
     /**
-     * Erdw\u00e4rme
+     * Erdwärme
      * 
      */
     GEOTHERMAL,
@@ -82,13 +82,13 @@ public enum EnergySourceEnev2014 {
     GAS,
 
     /**
-     * \u00d6l
+     * Öl
      * 
      */
     OIL,
 
     /**
-     * Fernw\u00e4rme
+     * Fernwärme
      * 
      */
     DISTRICT_HEATING,
@@ -118,13 +118,13 @@ public enum EnergySourceEnev2014 {
     SOUR_GAS,
 
     /**
-     * Fl\u00fcssiggas
+     * Flüssiggas
      * 
      */
     LIQUID_GAS,
 
     /**
-     * Fernw\u00e4rme Dampf
+     * Fernwärme Dampf
      * 
      */
     STEAM_DISTRICT_HEATING,
@@ -148,13 +148,13 @@ public enum EnergySourceEnev2014 {
     COAL_COKE,
 
     /**
-     * Nahw\u00e4rme
+     * Nahwärme
      * 
      */
     LOCAL_HEATING,
 
     /**
-     * W\u00e4rmelieferung
+     * Wärmelieferung
      * 
      */
     HEAT_SUPPLY,
@@ -178,7 +178,7 @@ public enum EnergySourceEnev2014 {
     HYDRO_ENERGY,
 
     /**
-     * Umweltw\u00e4rme
+     * Umweltwärme
      * 
      */
     ENVIRONMENTAL_THERMAL_ENERGY,

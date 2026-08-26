@@ -1,31 +1,31 @@
-
 package org.openestate.is24.restapi.xml.common;
 
-import javax.annotation.Generated;
-import javax.xml.bind.annotation.XmlEnum;
-import javax.xml.bind.annotation.XmlType;
+import jakarta.annotation.Generated;
+import jakarta.xml.bind.annotation.XmlEnum;
+import jakarta.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for SiteDevelopmentType.
+ * Erschließungsarten
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * <p>
- * <pre>
- * &lt;simpleType name="SiteDevelopmentType"&gt;
- *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
- *     &lt;enumeration value="DEVELOPED"/&gt;
- *     &lt;enumeration value="DEVELOPED_PARTIALLY"/&gt;
- *     &lt;enumeration value="NOT_DEVELOPED"/&gt;
- *     &lt;enumeration value="NO_INFORMATION"/&gt;
- *   &lt;/restriction&gt;
- * &lt;/simpleType&gt;
- * </pre>
+ * <p>Java class for SiteDevelopmentType</p>.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.</p>
+ * <pre>{@code
+ * <simpleType name="SiteDevelopmentType">
+ *   <restriction base="{http://www.w3.org/2001/XMLSchema}string">
+ *     <enumeration value="DEVELOPED"/>
+ *     <enumeration value="DEVELOPED_PARTIALLY"/>
+ *     <enumeration value="NOT_DEVELOPED"/>
+ *     <enumeration value="NO_INFORMATION"/>
+ *   </restriction>
+ * </simpleType>
+ * }</pre>
  * 
  */
 @XmlType(name = "SiteDevelopmentType")
 @XmlEnum
-@Generated(value = "com.sun.tools.xjc.Driver", date = "2021-08-07T09:44:49+02:00", comments = "JAXB RI v2.3.0")
+@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.9", date = "2026-08-26T20:20:00+02:00")
 public enum SiteDevelopmentType {
 
 

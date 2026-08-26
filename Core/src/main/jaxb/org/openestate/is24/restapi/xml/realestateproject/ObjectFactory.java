@@ -1,17 +1,17 @@
-
 package org.openestate.is24.restapi.xml.realestateproject;
 
-import javax.xml.bind.JAXBElement;
-import javax.xml.bind.annotation.XmlElementDecl;
-import javax.xml.bind.annotation.XmlRegistry;
 import javax.xml.namespace.QName;
+import jakarta.annotation.Generated;
+import jakarta.xml.bind.JAXBElement;
+import jakarta.xml.bind.annotation.XmlElementDecl;
+import jakarta.xml.bind.annotation.XmlRegistry;
 
 
 /**
  * This object contains factory methods for each 
  * Java content interface and Java element interface 
  * generated in the org.openestate.is24.restapi.xml.realestateproject package. 
- * <p>An ObjectFactory allows you to programatically 
+ * <p>An ObjectFactory allows you to programmatically 
  * construct new instances of the Java representation 
  * for XML content. The Java representation of XML 
  * content can consist of schema derived interfaces 
@@ -22,18 +22,19 @@ import javax.xml.namespace.QName;
  * 
  */
 @XmlRegistry
+@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.9", date = "2026-08-26T20:20:00+02:00")
 public class ObjectFactory {
 
-    private final static QName _RealEstateProjects_QNAME = new QName("http://rest.immobilienscout24.de/schema/offer/realestateproject/1.0", "realEstateProjects");
-    private final static QName _RealEstateProject_QNAME = new QName("http://rest.immobilienscout24.de/schema/offer/realestateproject/1.0", "realEstateProject");
-    private final static QName _RealEstateProjectEntries_QNAME = new QName("http://rest.immobilienscout24.de/schema/offer/realestateproject/1.0", "realEstateProjectEntries");
-    private final static QName _RealEstateProjectEntry_QNAME = new QName("http://rest.immobilienscout24.de/schema/offer/realestateproject/1.0", "realEstateProjectEntry");
-    private final static QName _Attachment_QNAME = new QName("http://rest.immobilienscout24.de/schema/offer/realestateproject/1.0", "attachment");
-    private final static QName _Attachments_QNAME = new QName("http://rest.immobilienscout24.de/schema/offer/realestateproject/1.0", "attachments");
-    private final static QName _AttachmentsOrder_QNAME = new QName("http://rest.immobilienscout24.de/schema/offer/realestateproject/1.0", "attachmentsOrder");
-    private final static QName _UploadTicketRequest_QNAME = new QName("http://rest.immobilienscout24.de/schema/offer/realestateproject/1.0", "uploadTicketRequest");
-    private final static QName _UploadTicket_QNAME = new QName("http://rest.immobilienscout24.de/schema/offer/realestateproject/1.0", "uploadTicket");
-    private final static QName _ProjectProposal_QNAME = new QName("http://rest.immobilienscout24.de/schema/offer/realestateproject/1.0", "projectProposal");
+    private static final QName _RealEstateProjects_QNAME = new QName("http://rest.immobilienscout24.de/schema/offer/realestateproject/1.0", "realEstateProjects");
+    private static final QName _RealEstateProject_QNAME = new QName("http://rest.immobilienscout24.de/schema/offer/realestateproject/1.0", "realEstateProject");
+    private static final QName _RealEstateProjectEntries_QNAME = new QName("http://rest.immobilienscout24.de/schema/offer/realestateproject/1.0", "realEstateProjectEntries");
+    private static final QName _RealEstateProjectEntry_QNAME = new QName("http://rest.immobilienscout24.de/schema/offer/realestateproject/1.0", "realEstateProjectEntry");
+    private static final QName _Attachment_QNAME = new QName("http://rest.immobilienscout24.de/schema/offer/realestateproject/1.0", "attachment");
+    private static final QName _Attachments_QNAME = new QName("http://rest.immobilienscout24.de/schema/offer/realestateproject/1.0", "attachments");
+    private static final QName _AttachmentsOrder_QNAME = new QName("http://rest.immobilienscout24.de/schema/offer/realestateproject/1.0", "attachmentsOrder");
+    private static final QName _UploadTicketRequest_QNAME = new QName("http://rest.immobilienscout24.de/schema/offer/realestateproject/1.0", "uploadTicketRequest");
+    private static final QName _UploadTicket_QNAME = new QName("http://rest.immobilienscout24.de/schema/offer/realestateproject/1.0", "uploadTicket");
+    private static final QName _ProjectProposal_QNAME = new QName("http://rest.immobilienscout24.de/schema/offer/realestateproject/1.0", "projectProposal");
 
     /**
      * Create a new ObjectFactory that can be used to create new instances of schema derived classes for package: org.openestate.is24.restapi.xml.realestateproject
@@ -45,6 +46,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link Picture }
      * 
+     * @return
+     *     the new instance of {@link Picture }
      */
     public Picture createPicture() {
         return new Picture();
@@ -53,6 +56,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link Picture.Urls }
      * 
+     * @return
+     *     the new instance of {@link Picture.Urls }
      */
     public Picture.Urls createPictureUrls() {
         return new Picture.Urls();
@@ -61,6 +66,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link UploadTicket }
      * 
+     * @return
+     *     the new instance of {@link UploadTicket }
      */
     public UploadTicket createUploadTicket() {
         return new UploadTicket();
@@ -69,6 +76,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link UploadTicket.Fields }
      * 
+     * @return
+     *     the new instance of {@link UploadTicket.Fields }
      */
     public UploadTicket.Fields createUploadTicketFields() {
         return new UploadTicket.Fields();
@@ -77,6 +86,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RealEstateProjects }
      * 
+     * @return
+     *     the new instance of {@link RealEstateProjects }
      */
     public RealEstateProjects createRealEstateProjects() {
         return new RealEstateProjects();
@@ -85,6 +96,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RealEstateProject }
      * 
+     * @return
+     *     the new instance of {@link RealEstateProject }
      */
     public RealEstateProject createRealEstateProject() {
         return new RealEstateProject();
@@ -93,6 +106,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RealEstateProjectEntries }
      * 
+     * @return
+     *     the new instance of {@link RealEstateProjectEntries }
      */
     public RealEstateProjectEntries createRealEstateProjectEntries() {
         return new RealEstateProjectEntries();
@@ -101,6 +116,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RealEstateProjectEntry }
      * 
+     * @return
+     *     the new instance of {@link RealEstateProjectEntry }
      */
     public RealEstateProjectEntry createRealEstateProjectEntry() {
         return new RealEstateProjectEntry();
@@ -109,6 +126,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link Attachments }
      * 
+     * @return
+     *     the new instance of {@link Attachments }
      */
     public Attachments createAttachments() {
         return new Attachments();
@@ -117,6 +136,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link AttachmentsOrder }
      * 
+     * @return
+     *     the new instance of {@link AttachmentsOrder }
      */
     public AttachmentsOrder createAttachmentsOrder() {
         return new AttachmentsOrder();
@@ -125,6 +146,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link UploadTicketRequest }
      * 
+     * @return
+     *     the new instance of {@link UploadTicketRequest }
      */
     public UploadTicketRequest createUploadTicketRequest() {
         return new UploadTicketRequest();
@@ -133,6 +156,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ProjectProposal }
      * 
+     * @return
+     *     the new instance of {@link ProjectProposal }
      */
     public ProjectProposal createProjectProposal() {
         return new ProjectProposal();
@@ -141,6 +166,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link PDFDocument }
      * 
+     * @return
+     *     the new instance of {@link PDFDocument }
      */
     public PDFDocument createPDFDocument() {
         return new PDFDocument();
@@ -149,6 +176,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link Link }
      * 
+     * @return
+     *     the new instance of {@link Link }
      */
     public Link createLink() {
         return new Link();
@@ -157,6 +186,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link InteriorCharacteristics }
      * 
+     * @return
+     *     the new instance of {@link InteriorCharacteristics }
      */
     public InteriorCharacteristics createInteriorCharacteristics() {
         return new InteriorCharacteristics();
@@ -165,6 +196,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link Contact }
      * 
+     * @return
+     *     the new instance of {@link Contact }
      */
     public Contact createContact() {
         return new Contact();
@@ -173,6 +206,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link NumberOfRoomsRange }
      * 
+     * @return
+     *     the new instance of {@link NumberOfRoomsRange }
      */
     public NumberOfRoomsRange createNumberOfRoomsRange() {
         return new NumberOfRoomsRange();
@@ -181,6 +216,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link NumberOfHousingUnitsDetails }
      * 
+     * @return
+     *     the new instance of {@link NumberOfHousingUnitsDetails }
      */
     public NumberOfHousingUnitsDetails createNumberOfHousingUnitsDetails() {
         return new NumberOfHousingUnitsDetails();
@@ -189,6 +226,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link Customization }
      * 
+     * @return
+     *     the new instance of {@link Customization }
      */
     public Customization createCustomization() {
         return new Customization();
@@ -197,6 +236,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link ContactFormFields }
      * 
+     * @return
+     *     the new instance of {@link ContactFormFields }
      */
     public ContactFormFields createContactFormFields() {
         return new ContactFormFields();
@@ -205,6 +246,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link Picture.Urls.Url }
      * 
+     * @return
+     *     the new instance of {@link Picture.Urls.Url }
      */
     public Picture.Urls.Url createPictureUrlsUrl() {
         return new Picture.Urls.Url();
@@ -213,6 +256,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link UploadTicket.Fields.Field }
      * 
+     * @return
+     *     the new instance of {@link UploadTicket.Fields.Field }
      */
     public UploadTicket.Fields.Field createUploadTicketFieldsField() {
         return new UploadTicket.Fields.Field();
@@ -228,7 +273,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://rest.immobilienscout24.de/schema/offer/realestateproject/1.0", name = "realEstateProjects")
     public JAXBElement<RealEstateProjects> createRealEstateProjects(RealEstateProjects value) {
-        return new JAXBElement<RealEstateProjects>(_RealEstateProjects_QNAME, RealEstateProjects.class, null, value);
+        return new JAXBElement<>(_RealEstateProjects_QNAME, RealEstateProjects.class, null, value);
     }
 
     /**
@@ -241,7 +286,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://rest.immobilienscout24.de/schema/offer/realestateproject/1.0", name = "realEstateProject")
     public JAXBElement<RealEstateProject> createRealEstateProject(RealEstateProject value) {
-        return new JAXBElement<RealEstateProject>(_RealEstateProject_QNAME, RealEstateProject.class, null, value);
+        return new JAXBElement<>(_RealEstateProject_QNAME, RealEstateProject.class, null, value);
     }
 
     /**
@@ -254,7 +299,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://rest.immobilienscout24.de/schema/offer/realestateproject/1.0", name = "realEstateProjectEntries")
     public JAXBElement<RealEstateProjectEntries> createRealEstateProjectEntries(RealEstateProjectEntries value) {
-        return new JAXBElement<RealEstateProjectEntries>(_RealEstateProjectEntries_QNAME, RealEstateProjectEntries.class, null, value);
+        return new JAXBElement<>(_RealEstateProjectEntries_QNAME, RealEstateProjectEntries.class, null, value);
     }
 
     /**
@@ -267,7 +312,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://rest.immobilienscout24.de/schema/offer/realestateproject/1.0", name = "realEstateProjectEntry")
     public JAXBElement<RealEstateProjectEntry> createRealEstateProjectEntry(RealEstateProjectEntry value) {
-        return new JAXBElement<RealEstateProjectEntry>(_RealEstateProjectEntry_QNAME, RealEstateProjectEntry.class, null, value);
+        return new JAXBElement<>(_RealEstateProjectEntry_QNAME, RealEstateProjectEntry.class, null, value);
     }
 
     /**
@@ -280,7 +325,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://rest.immobilienscout24.de/schema/offer/realestateproject/1.0", name = "attachment")
     public JAXBElement<Attachment> createAttachment(Attachment value) {
-        return new JAXBElement<Attachment>(_Attachment_QNAME, Attachment.class, null, value);
+        return new JAXBElement<>(_Attachment_QNAME, Attachment.class, null, value);
     }
 
     /**
@@ -293,7 +338,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://rest.immobilienscout24.de/schema/offer/realestateproject/1.0", name = "attachments")
     public JAXBElement<Attachments> createAttachments(Attachments value) {
-        return new JAXBElement<Attachments>(_Attachments_QNAME, Attachments.class, null, value);
+        return new JAXBElement<>(_Attachments_QNAME, Attachments.class, null, value);
     }
 
     /**
@@ -306,7 +351,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://rest.immobilienscout24.de/schema/offer/realestateproject/1.0", name = "attachmentsOrder")
     public JAXBElement<AttachmentsOrder> createAttachmentsOrder(AttachmentsOrder value) {
-        return new JAXBElement<AttachmentsOrder>(_AttachmentsOrder_QNAME, AttachmentsOrder.class, null, value);
+        return new JAXBElement<>(_AttachmentsOrder_QNAME, AttachmentsOrder.class, null, value);
     }
 
     /**
@@ -319,7 +364,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://rest.immobilienscout24.de/schema/offer/realestateproject/1.0", name = "uploadTicketRequest")
     public JAXBElement<UploadTicketRequest> createUploadTicketRequest(UploadTicketRequest value) {
-        return new JAXBElement<UploadTicketRequest>(_UploadTicketRequest_QNAME, UploadTicketRequest.class, null, value);
+        return new JAXBElement<>(_UploadTicketRequest_QNAME, UploadTicketRequest.class, null, value);
     }
 
     /**
@@ -332,7 +377,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://rest.immobilienscout24.de/schema/offer/realestateproject/1.0", name = "uploadTicket")
     public JAXBElement<UploadTicket> createUploadTicket(UploadTicket value) {
-        return new JAXBElement<UploadTicket>(_UploadTicket_QNAME, UploadTicket.class, null, value);
+        return new JAXBElement<>(_UploadTicket_QNAME, UploadTicket.class, null, value);
     }
 
     /**
@@ -345,7 +390,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://rest.immobilienscout24.de/schema/offer/realestateproject/1.0", name = "projectProposal")
     public JAXBElement<ProjectProposal> createProjectProposal(ProjectProposal value) {
-        return new JAXBElement<ProjectProposal>(_ProjectProposal_QNAME, ProjectProposal.class, null, value);
+        return new JAXBElement<>(_ProjectProposal_QNAME, ProjectProposal.class, null, value);
     }
 
 }

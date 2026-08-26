@@ -1,263 +1,263 @@
-
 package org.openestate.is24.restapi.xml.common;
 
-import javax.annotation.Generated;
-import javax.xml.bind.annotation.XmlEnum;
-import javax.xml.bind.annotation.XmlType;
+import jakarta.annotation.Generated;
+import jakarta.xml.bind.annotation.XmlEnum;
+import jakarta.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for CountryCode.
+ * Auflistung der unterstuetzten ISO-3-Landescodes (Laenderkennzeichnung)
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * <p>
- * <pre>
- * &lt;simpleType name="CountryCode"&gt;
- *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
- *     &lt;enumeration value="ABW"/&gt;
- *     &lt;enumeration value="AFG"/&gt;
- *     &lt;enumeration value="AGO"/&gt;
- *     &lt;enumeration value="AIA"/&gt;
- *     &lt;enumeration value="ALB"/&gt;
- *     &lt;enumeration value="AND"/&gt;
- *     &lt;enumeration value="ANT"/&gt;
- *     &lt;enumeration value="ARE"/&gt;
- *     &lt;enumeration value="ARG"/&gt;
- *     &lt;enumeration value="ARM"/&gt;
- *     &lt;enumeration value="ASM"/&gt;
- *     &lt;enumeration value="ATA"/&gt;
- *     &lt;enumeration value="ATG"/&gt;
- *     &lt;enumeration value="AUS"/&gt;
- *     &lt;enumeration value="AUT"/&gt;
- *     &lt;enumeration value="AZE"/&gt;
- *     &lt;enumeration value="BDI"/&gt;
- *     &lt;enumeration value="BEL"/&gt;
- *     &lt;enumeration value="BEN"/&gt;
- *     &lt;enumeration value="BFA"/&gt;
- *     &lt;enumeration value="BGD"/&gt;
- *     &lt;enumeration value="BGR"/&gt;
- *     &lt;enumeration value="BHR"/&gt;
- *     &lt;enumeration value="BHS"/&gt;
- *     &lt;enumeration value="BIH"/&gt;
- *     &lt;enumeration value="BLR"/&gt;
- *     &lt;enumeration value="BLZ"/&gt;
- *     &lt;enumeration value="BMU"/&gt;
- *     &lt;enumeration value="BOL"/&gt;
- *     &lt;enumeration value="BRA"/&gt;
- *     &lt;enumeration value="BRB"/&gt;
- *     &lt;enumeration value="BRN"/&gt;
- *     &lt;enumeration value="BTN"/&gt;
- *     &lt;enumeration value="BWA"/&gt;
- *     &lt;enumeration value="CAF"/&gt;
- *     &lt;enumeration value="CAN"/&gt;
- *     &lt;enumeration value="CCK"/&gt;
- *     &lt;enumeration value="CHE"/&gt;
- *     &lt;enumeration value="CHL"/&gt;
- *     &lt;enumeration value="CHN"/&gt;
- *     &lt;enumeration value="CIV"/&gt;
- *     &lt;enumeration value="CMR"/&gt;
- *     &lt;enumeration value="COD"/&gt;
- *     &lt;enumeration value="COG"/&gt;
- *     &lt;enumeration value="COK"/&gt;
- *     &lt;enumeration value="COL"/&gt;
- *     &lt;enumeration value="COM"/&gt;
- *     &lt;enumeration value="CPV"/&gt;
- *     &lt;enumeration value="CRI"/&gt;
- *     &lt;enumeration value="CUB"/&gt;
- *     &lt;enumeration value="CXR"/&gt;
- *     &lt;enumeration value="CYM"/&gt;
- *     &lt;enumeration value="CYP"/&gt;
- *     &lt;enumeration value="CZE"/&gt;
- *     &lt;enumeration value="DEU"/&gt;
- *     &lt;enumeration value="DJI"/&gt;
- *     &lt;enumeration value="DMA"/&gt;
- *     &lt;enumeration value="DNK"/&gt;
- *     &lt;enumeration value="DOM"/&gt;
- *     &lt;enumeration value="DZA"/&gt;
- *     &lt;enumeration value="ECU"/&gt;
- *     &lt;enumeration value="EGY"/&gt;
- *     &lt;enumeration value="ERI"/&gt;
- *     &lt;enumeration value="ESH"/&gt;
- *     &lt;enumeration value="ESP"/&gt;
- *     &lt;enumeration value="EST"/&gt;
- *     &lt;enumeration value="ETH"/&gt;
- *     &lt;enumeration value="FIN"/&gt;
- *     &lt;enumeration value="FJI"/&gt;
- *     &lt;enumeration value="FLK"/&gt;
- *     &lt;enumeration value="FRA"/&gt;
- *     &lt;enumeration value="FRO"/&gt;
- *     &lt;enumeration value="FSM"/&gt;
- *     &lt;enumeration value="GAB"/&gt;
- *     &lt;enumeration value="GBR"/&gt;
- *     &lt;enumeration value="GEO"/&gt;
- *     &lt;enumeration value="GHA"/&gt;
- *     &lt;enumeration value="GIB"/&gt;
- *     &lt;enumeration value="GIN"/&gt;
- *     &lt;enumeration value="GLP"/&gt;
- *     &lt;enumeration value="GMB"/&gt;
- *     &lt;enumeration value="GNB"/&gt;
- *     &lt;enumeration value="GNQ"/&gt;
- *     &lt;enumeration value="GRC"/&gt;
- *     &lt;enumeration value="GRD"/&gt;
- *     &lt;enumeration value="GRL"/&gt;
- *     &lt;enumeration value="GTM"/&gt;
- *     &lt;enumeration value="GUF"/&gt;
- *     &lt;enumeration value="GUM"/&gt;
- *     &lt;enumeration value="GUY"/&gt;
- *     &lt;enumeration value="HKG"/&gt;
- *     &lt;enumeration value="HMD"/&gt;
- *     &lt;enumeration value="HND"/&gt;
- *     &lt;enumeration value="HRV"/&gt;
- *     &lt;enumeration value="HTI"/&gt;
- *     &lt;enumeration value="HUN"/&gt;
- *     &lt;enumeration value="IDN"/&gt;
- *     &lt;enumeration value="IMN"/&gt;
- *     &lt;enumeration value="IND"/&gt;
- *     &lt;enumeration value="IRL"/&gt;
- *     &lt;enumeration value="IRN"/&gt;
- *     &lt;enumeration value="IRQ"/&gt;
- *     &lt;enumeration value="ISL"/&gt;
- *     &lt;enumeration value="ISR"/&gt;
- *     &lt;enumeration value="ITA"/&gt;
- *     &lt;enumeration value="JAM"/&gt;
- *     &lt;enumeration value="JOR"/&gt;
- *     &lt;enumeration value="JPN"/&gt;
- *     &lt;enumeration value="KAZ"/&gt;
- *     &lt;enumeration value="KEN"/&gt;
- *     &lt;enumeration value="KGZ"/&gt;
- *     &lt;enumeration value="KHM"/&gt;
- *     &lt;enumeration value="KIR"/&gt;
- *     &lt;enumeration value="KNA"/&gt;
- *     &lt;enumeration value="KOR"/&gt;
- *     &lt;enumeration value="KWT"/&gt;
- *     &lt;enumeration value="LAO"/&gt;
- *     &lt;enumeration value="LBN"/&gt;
- *     &lt;enumeration value="LBR"/&gt;
- *     &lt;enumeration value="LBY"/&gt;
- *     &lt;enumeration value="LCA"/&gt;
- *     &lt;enumeration value="LIE"/&gt;
- *     &lt;enumeration value="LKA"/&gt;
- *     &lt;enumeration value="LSO"/&gt;
- *     &lt;enumeration value="LTU"/&gt;
- *     &lt;enumeration value="LUX"/&gt;
- *     &lt;enumeration value="LVA"/&gt;
- *     &lt;enumeration value="MAC"/&gt;
- *     &lt;enumeration value="MAR"/&gt;
- *     &lt;enumeration value="MCO"/&gt;
- *     &lt;enumeration value="MDA"/&gt;
- *     &lt;enumeration value="MDG"/&gt;
- *     &lt;enumeration value="MDV"/&gt;
- *     &lt;enumeration value="MEX"/&gt;
- *     &lt;enumeration value="MHL"/&gt;
- *     &lt;enumeration value="MKD"/&gt;
- *     &lt;enumeration value="MLI"/&gt;
- *     &lt;enumeration value="MLT"/&gt;
- *     &lt;enumeration value="MMR"/&gt;
- *     &lt;enumeration value="MNE"/&gt;
- *     &lt;enumeration value="MNG"/&gt;
- *     &lt;enumeration value="MNP"/&gt;
- *     &lt;enumeration value="MOZ"/&gt;
- *     &lt;enumeration value="MRT"/&gt;
- *     &lt;enumeration value="MSR"/&gt;
- *     &lt;enumeration value="MTQ"/&gt;
- *     &lt;enumeration value="MUS"/&gt;
- *     &lt;enumeration value="MWI"/&gt;
- *     &lt;enumeration value="MYS"/&gt;
- *     &lt;enumeration value="MYT"/&gt;
- *     &lt;enumeration value="NAM"/&gt;
- *     &lt;enumeration value="NCL"/&gt;
- *     &lt;enumeration value="NER"/&gt;
- *     &lt;enumeration value="NFK"/&gt;
- *     &lt;enumeration value="NGA"/&gt;
- *     &lt;enumeration value="NIC"/&gt;
- *     &lt;enumeration value="NIU"/&gt;
- *     &lt;enumeration value="NLD"/&gt;
- *     &lt;enumeration value="NOR"/&gt;
- *     &lt;enumeration value="NPL"/&gt;
- *     &lt;enumeration value="NRU"/&gt;
- *     &lt;enumeration value="NZL"/&gt;
- *     &lt;enumeration value="OMN"/&gt;
- *     &lt;enumeration value="PAK"/&gt;
- *     &lt;enumeration value="PAN"/&gt;
- *     &lt;enumeration value="PCN"/&gt;
- *     &lt;enumeration value="PER"/&gt;
- *     &lt;enumeration value="PHL"/&gt;
- *     &lt;enumeration value="PLW"/&gt;
- *     &lt;enumeration value="PNG"/&gt;
- *     &lt;enumeration value="POL"/&gt;
- *     &lt;enumeration value="PRI"/&gt;
- *     &lt;enumeration value="PRK"/&gt;
- *     &lt;enumeration value="PRT"/&gt;
- *     &lt;enumeration value="PRY"/&gt;
- *     &lt;enumeration value="PYF"/&gt;
- *     &lt;enumeration value="QAT"/&gt;
- *     &lt;enumeration value="REU"/&gt;
- *     &lt;enumeration value="ROU"/&gt;
- *     &lt;enumeration value="RUS"/&gt;
- *     &lt;enumeration value="RWA"/&gt;
- *     &lt;enumeration value="SAU"/&gt;
- *     &lt;enumeration value="SDN"/&gt;
- *     &lt;enumeration value="SEN"/&gt;
- *     &lt;enumeration value="SGP"/&gt;
- *     &lt;enumeration value="SHN"/&gt;
- *     &lt;enumeration value="SJM"/&gt;
- *     &lt;enumeration value="SLB"/&gt;
- *     &lt;enumeration value="SLE"/&gt;
- *     &lt;enumeration value="SLV"/&gt;
- *     &lt;enumeration value="SMR"/&gt;
- *     &lt;enumeration value="SOM"/&gt;
- *     &lt;enumeration value="SPM"/&gt;
- *     &lt;enumeration value="SRB"/&gt;
- *     &lt;enumeration value="STP"/&gt;
- *     &lt;enumeration value="SUR"/&gt;
- *     &lt;enumeration value="SVK"/&gt;
- *     &lt;enumeration value="SVN"/&gt;
- *     &lt;enumeration value="SWE"/&gt;
- *     &lt;enumeration value="SWZ"/&gt;
- *     &lt;enumeration value="SYC"/&gt;
- *     &lt;enumeration value="SYR"/&gt;
- *     &lt;enumeration value="TCA"/&gt;
- *     &lt;enumeration value="TCD"/&gt;
- *     &lt;enumeration value="TGO"/&gt;
- *     &lt;enumeration value="THA"/&gt;
- *     &lt;enumeration value="TJK"/&gt;
- *     &lt;enumeration value="TKL"/&gt;
- *     &lt;enumeration value="TKM"/&gt;
- *     &lt;enumeration value="TMP"/&gt;
- *     &lt;enumeration value="TON"/&gt;
- *     &lt;enumeration value="TTO"/&gt;
- *     &lt;enumeration value="TUN"/&gt;
- *     &lt;enumeration value="TUR"/&gt;
- *     &lt;enumeration value="TUV"/&gt;
- *     &lt;enumeration value="TWN"/&gt;
- *     &lt;enumeration value="TZA"/&gt;
- *     &lt;enumeration value="UGA"/&gt;
- *     &lt;enumeration value="UKR"/&gt;
- *     &lt;enumeration value="URY"/&gt;
- *     &lt;enumeration value="USA"/&gt;
- *     &lt;enumeration value="UZB"/&gt;
- *     &lt;enumeration value="VAT"/&gt;
- *     &lt;enumeration value="VCT"/&gt;
- *     &lt;enumeration value="VEN"/&gt;
- *     &lt;enumeration value="VGB"/&gt;
- *     &lt;enumeration value="VIR"/&gt;
- *     &lt;enumeration value="VNM"/&gt;
- *     &lt;enumeration value="VUT"/&gt;
- *     &lt;enumeration value="WLF"/&gt;
- *     &lt;enumeration value="WSM"/&gt;
- *     &lt;enumeration value="YEM"/&gt;
- *     &lt;enumeration value="ZAF"/&gt;
- *     &lt;enumeration value="ZMB"/&gt;
- *     &lt;enumeration value="ZWE"/&gt;
- *     &lt;enumeration value="XKO"/&gt;
- *   &lt;/restriction&gt;
- * &lt;/simpleType&gt;
- * </pre>
+ * <p>Java class for CountryCode</p>.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.</p>
+ * <pre>{@code
+ * <simpleType name="CountryCode">
+ *   <restriction base="{http://www.w3.org/2001/XMLSchema}string">
+ *     <enumeration value="ABW"/>
+ *     <enumeration value="AFG"/>
+ *     <enumeration value="AGO"/>
+ *     <enumeration value="AIA"/>
+ *     <enumeration value="ALB"/>
+ *     <enumeration value="AND"/>
+ *     <enumeration value="ANT"/>
+ *     <enumeration value="ARE"/>
+ *     <enumeration value="ARG"/>
+ *     <enumeration value="ARM"/>
+ *     <enumeration value="ASM"/>
+ *     <enumeration value="ATA"/>
+ *     <enumeration value="ATG"/>
+ *     <enumeration value="AUS"/>
+ *     <enumeration value="AUT"/>
+ *     <enumeration value="AZE"/>
+ *     <enumeration value="BDI"/>
+ *     <enumeration value="BEL"/>
+ *     <enumeration value="BEN"/>
+ *     <enumeration value="BFA"/>
+ *     <enumeration value="BGD"/>
+ *     <enumeration value="BGR"/>
+ *     <enumeration value="BHR"/>
+ *     <enumeration value="BHS"/>
+ *     <enumeration value="BIH"/>
+ *     <enumeration value="BLR"/>
+ *     <enumeration value="BLZ"/>
+ *     <enumeration value="BMU"/>
+ *     <enumeration value="BOL"/>
+ *     <enumeration value="BRA"/>
+ *     <enumeration value="BRB"/>
+ *     <enumeration value="BRN"/>
+ *     <enumeration value="BTN"/>
+ *     <enumeration value="BWA"/>
+ *     <enumeration value="CAF"/>
+ *     <enumeration value="CAN"/>
+ *     <enumeration value="CCK"/>
+ *     <enumeration value="CHE"/>
+ *     <enumeration value="CHL"/>
+ *     <enumeration value="CHN"/>
+ *     <enumeration value="CIV"/>
+ *     <enumeration value="CMR"/>
+ *     <enumeration value="COD"/>
+ *     <enumeration value="COG"/>
+ *     <enumeration value="COK"/>
+ *     <enumeration value="COL"/>
+ *     <enumeration value="COM"/>
+ *     <enumeration value="CPV"/>
+ *     <enumeration value="CRI"/>
+ *     <enumeration value="CUB"/>
+ *     <enumeration value="CXR"/>
+ *     <enumeration value="CYM"/>
+ *     <enumeration value="CYP"/>
+ *     <enumeration value="CZE"/>
+ *     <enumeration value="DEU"/>
+ *     <enumeration value="DJI"/>
+ *     <enumeration value="DMA"/>
+ *     <enumeration value="DNK"/>
+ *     <enumeration value="DOM"/>
+ *     <enumeration value="DZA"/>
+ *     <enumeration value="ECU"/>
+ *     <enumeration value="EGY"/>
+ *     <enumeration value="ERI"/>
+ *     <enumeration value="ESH"/>
+ *     <enumeration value="ESP"/>
+ *     <enumeration value="EST"/>
+ *     <enumeration value="ETH"/>
+ *     <enumeration value="FIN"/>
+ *     <enumeration value="FJI"/>
+ *     <enumeration value="FLK"/>
+ *     <enumeration value="FRA"/>
+ *     <enumeration value="FRO"/>
+ *     <enumeration value="FSM"/>
+ *     <enumeration value="GAB"/>
+ *     <enumeration value="GBR"/>
+ *     <enumeration value="GEO"/>
+ *     <enumeration value="GHA"/>
+ *     <enumeration value="GIB"/>
+ *     <enumeration value="GIN"/>
+ *     <enumeration value="GLP"/>
+ *     <enumeration value="GMB"/>
+ *     <enumeration value="GNB"/>
+ *     <enumeration value="GNQ"/>
+ *     <enumeration value="GRC"/>
+ *     <enumeration value="GRD"/>
+ *     <enumeration value="GRL"/>
+ *     <enumeration value="GTM"/>
+ *     <enumeration value="GUF"/>
+ *     <enumeration value="GUM"/>
+ *     <enumeration value="GUY"/>
+ *     <enumeration value="HKG"/>
+ *     <enumeration value="HMD"/>
+ *     <enumeration value="HND"/>
+ *     <enumeration value="HRV"/>
+ *     <enumeration value="HTI"/>
+ *     <enumeration value="HUN"/>
+ *     <enumeration value="IDN"/>
+ *     <enumeration value="IMN"/>
+ *     <enumeration value="IND"/>
+ *     <enumeration value="IRL"/>
+ *     <enumeration value="IRN"/>
+ *     <enumeration value="IRQ"/>
+ *     <enumeration value="ISL"/>
+ *     <enumeration value="ISR"/>
+ *     <enumeration value="ITA"/>
+ *     <enumeration value="JAM"/>
+ *     <enumeration value="JOR"/>
+ *     <enumeration value="JPN"/>
+ *     <enumeration value="KAZ"/>
+ *     <enumeration value="KEN"/>
+ *     <enumeration value="KGZ"/>
+ *     <enumeration value="KHM"/>
+ *     <enumeration value="KIR"/>
+ *     <enumeration value="KNA"/>
+ *     <enumeration value="KOR"/>
+ *     <enumeration value="KWT"/>
+ *     <enumeration value="LAO"/>
+ *     <enumeration value="LBN"/>
+ *     <enumeration value="LBR"/>
+ *     <enumeration value="LBY"/>
+ *     <enumeration value="LCA"/>
+ *     <enumeration value="LIE"/>
+ *     <enumeration value="LKA"/>
+ *     <enumeration value="LSO"/>
+ *     <enumeration value="LTU"/>
+ *     <enumeration value="LUX"/>
+ *     <enumeration value="LVA"/>
+ *     <enumeration value="MAC"/>
+ *     <enumeration value="MAR"/>
+ *     <enumeration value="MCO"/>
+ *     <enumeration value="MDA"/>
+ *     <enumeration value="MDG"/>
+ *     <enumeration value="MDV"/>
+ *     <enumeration value="MEX"/>
+ *     <enumeration value="MHL"/>
+ *     <enumeration value="MKD"/>
+ *     <enumeration value="MLI"/>
+ *     <enumeration value="MLT"/>
+ *     <enumeration value="MMR"/>
+ *     <enumeration value="MNE"/>
+ *     <enumeration value="MNG"/>
+ *     <enumeration value="MNP"/>
+ *     <enumeration value="MOZ"/>
+ *     <enumeration value="MRT"/>
+ *     <enumeration value="MSR"/>
+ *     <enumeration value="MTQ"/>
+ *     <enumeration value="MUS"/>
+ *     <enumeration value="MWI"/>
+ *     <enumeration value="MYS"/>
+ *     <enumeration value="MYT"/>
+ *     <enumeration value="NAM"/>
+ *     <enumeration value="NCL"/>
+ *     <enumeration value="NER"/>
+ *     <enumeration value="NFK"/>
+ *     <enumeration value="NGA"/>
+ *     <enumeration value="NIC"/>
+ *     <enumeration value="NIU"/>
+ *     <enumeration value="NLD"/>
+ *     <enumeration value="NOR"/>
+ *     <enumeration value="NPL"/>
+ *     <enumeration value="NRU"/>
+ *     <enumeration value="NZL"/>
+ *     <enumeration value="OMN"/>
+ *     <enumeration value="PAK"/>
+ *     <enumeration value="PAN"/>
+ *     <enumeration value="PCN"/>
+ *     <enumeration value="PER"/>
+ *     <enumeration value="PHL"/>
+ *     <enumeration value="PLW"/>
+ *     <enumeration value="PNG"/>
+ *     <enumeration value="POL"/>
+ *     <enumeration value="PRI"/>
+ *     <enumeration value="PRK"/>
+ *     <enumeration value="PRT"/>
+ *     <enumeration value="PRY"/>
+ *     <enumeration value="PYF"/>
+ *     <enumeration value="QAT"/>
+ *     <enumeration value="REU"/>
+ *     <enumeration value="ROU"/>
+ *     <enumeration value="RUS"/>
+ *     <enumeration value="RWA"/>
+ *     <enumeration value="SAU"/>
+ *     <enumeration value="SDN"/>
+ *     <enumeration value="SEN"/>
+ *     <enumeration value="SGP"/>
+ *     <enumeration value="SHN"/>
+ *     <enumeration value="SJM"/>
+ *     <enumeration value="SLB"/>
+ *     <enumeration value="SLE"/>
+ *     <enumeration value="SLV"/>
+ *     <enumeration value="SMR"/>
+ *     <enumeration value="SOM"/>
+ *     <enumeration value="SPM"/>
+ *     <enumeration value="SRB"/>
+ *     <enumeration value="STP"/>
+ *     <enumeration value="SUR"/>
+ *     <enumeration value="SVK"/>
+ *     <enumeration value="SVN"/>
+ *     <enumeration value="SWE"/>
+ *     <enumeration value="SWZ"/>
+ *     <enumeration value="SYC"/>
+ *     <enumeration value="SYR"/>
+ *     <enumeration value="TCA"/>
+ *     <enumeration value="TCD"/>
+ *     <enumeration value="TGO"/>
+ *     <enumeration value="THA"/>
+ *     <enumeration value="TJK"/>
+ *     <enumeration value="TKL"/>
+ *     <enumeration value="TKM"/>
+ *     <enumeration value="TMP"/>
+ *     <enumeration value="TON"/>
+ *     <enumeration value="TTO"/>
+ *     <enumeration value="TUN"/>
+ *     <enumeration value="TUR"/>
+ *     <enumeration value="TUV"/>
+ *     <enumeration value="TWN"/>
+ *     <enumeration value="TZA"/>
+ *     <enumeration value="UGA"/>
+ *     <enumeration value="UKR"/>
+ *     <enumeration value="URY"/>
+ *     <enumeration value="USA"/>
+ *     <enumeration value="UZB"/>
+ *     <enumeration value="VAT"/>
+ *     <enumeration value="VCT"/>
+ *     <enumeration value="VEN"/>
+ *     <enumeration value="VGB"/>
+ *     <enumeration value="VIR"/>
+ *     <enumeration value="VNM"/>
+ *     <enumeration value="VUT"/>
+ *     <enumeration value="WLF"/>
+ *     <enumeration value="WSM"/>
+ *     <enumeration value="YEM"/>
+ *     <enumeration value="ZAF"/>
+ *     <enumeration value="ZMB"/>
+ *     <enumeration value="ZWE"/>
+ *     <enumeration value="XKO"/>
+ *   </restriction>
+ * </simpleType>
+ * }</pre>
  * 
  */
 @XmlType(name = "CountryCode")
 @XmlEnum
-@Generated(value = "com.sun.tools.xjc.Driver", date = "2021-08-07T09:44:49+02:00", comments = "JAXB RI v2.3.0")
+@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.9", date = "2026-08-26T20:20:00+02:00")
 public enum CountryCode {
 
 
@@ -329,7 +329,6 @@ public enum CountryCode {
 
     /**
      * Antarktis (Sonderstatus durch Antarktis-Vertrag)
-     *                     
      * 
      */
     ATA,
@@ -503,7 +502,7 @@ public enum CountryCode {
     CHN,
 
     /**
-     * Cote d'Ivoire (Elfenbeink\u00fcste)
+     * Cote d'Ivoire (Elfenbeinküste)
      * 
      */
     CIV,
@@ -708,7 +707,6 @@ public enum CountryCode {
 
     /**
      * Vereinigtes Koenigreich Grossbritannien und Nordirland
-     *                     
      * 
      */
     GBR,

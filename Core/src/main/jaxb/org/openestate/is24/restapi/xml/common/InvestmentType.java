@@ -1,46 +1,47 @@
-
 package org.openestate.is24.restapi.xml.common;
 
-import javax.annotation.Generated;
-import javax.xml.bind.annotation.XmlEnum;
-import javax.xml.bind.annotation.XmlType;
+import jakarta.annotation.Generated;
+import jakarta.xml.bind.annotation.XmlEnum;
+import jakarta.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for InvestmentType.
+ * Aufzählung der Arten von Anlageimmobilien-Objekte wie z.B.
+ *                 Einfamilienhäuser, Lager oder Wohnanlagen
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * <p>
- * <pre>
- * &lt;simpleType name="InvestmentType"&gt;
- *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
- *     &lt;enumeration value="SINGLE_FAMILY_HOUSE"/&gt;
- *     &lt;enumeration value="MULTI_FAMILY_HOUSE"/&gt;
- *     &lt;enumeration value="FREEHOLD_FLAT"/&gt;
- *     &lt;enumeration value="SHOPPING_CENTRE"/&gt;
- *     &lt;enumeration value="RESTAURANT"/&gt;
- *     &lt;enumeration value="HOTEL"/&gt;
- *     &lt;enumeration value="LEISURE_FACILITY"/&gt;
- *     &lt;enumeration value="COMMERCIAL_UNIT"/&gt;
- *     &lt;enumeration value="OFFICE_BUILDING"/&gt;
- *     &lt;enumeration value="COMMERCIAL_BUILDING"/&gt;
- *     &lt;enumeration value="COMMERCIAL_PROPERTY"/&gt;
- *     &lt;enumeration value="HALL_STORAGE"/&gt;
- *     &lt;enumeration value="INDUSTRIAL_PROPERTY"/&gt;
- *     &lt;enumeration value="SHOP_SALES_FLOOR"/&gt;
- *     &lt;enumeration value="SERVICE_CENTRE"/&gt;
- *     &lt;enumeration value="OTHER"/&gt;
- *     &lt;enumeration value="SUPERMARKET"/&gt;
- *     &lt;enumeration value="LIVING_BUSINESS_HOUSE"/&gt;
- *     &lt;enumeration value="HOUSING_ESTATE"/&gt;
- *   &lt;/restriction&gt;
- * &lt;/simpleType&gt;
- * </pre>
+ * <p>Java class for InvestmentType</p>.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.</p>
+ * <pre>{@code
+ * <simpleType name="InvestmentType">
+ *   <restriction base="{http://www.w3.org/2001/XMLSchema}string">
+ *     <enumeration value="SINGLE_FAMILY_HOUSE"/>
+ *     <enumeration value="MULTI_FAMILY_HOUSE"/>
+ *     <enumeration value="FREEHOLD_FLAT"/>
+ *     <enumeration value="SHOPPING_CENTRE"/>
+ *     <enumeration value="RESTAURANT"/>
+ *     <enumeration value="HOTEL"/>
+ *     <enumeration value="LEISURE_FACILITY"/>
+ *     <enumeration value="COMMERCIAL_UNIT"/>
+ *     <enumeration value="OFFICE_BUILDING"/>
+ *     <enumeration value="COMMERCIAL_BUILDING"/>
+ *     <enumeration value="COMMERCIAL_PROPERTY"/>
+ *     <enumeration value="HALL_STORAGE"/>
+ *     <enumeration value="INDUSTRIAL_PROPERTY"/>
+ *     <enumeration value="SHOP_SALES_FLOOR"/>
+ *     <enumeration value="SERVICE_CENTRE"/>
+ *     <enumeration value="OTHER"/>
+ *     <enumeration value="SUPERMARKET"/>
+ *     <enumeration value="LIVING_BUSINESS_HOUSE"/>
+ *     <enumeration value="HOUSING_ESTATE"/>
+ *   </restriction>
+ * </simpleType>
+ * }</pre>
  * 
  */
 @XmlType(name = "InvestmentType")
 @XmlEnum
-@Generated(value = "com.sun.tools.xjc.Driver", date = "2021-08-07T09:44:49+02:00", comments = "JAXB RI v2.3.0")
+@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.9", date = "2026-08-26T20:20:00+02:00")
 public enum InvestmentType {
 
 
@@ -69,7 +70,7 @@ public enum InvestmentType {
     SHOPPING_CENTRE,
 
     /**
-     * Gastst\u00e4tte
+     * Gaststätte
      * 
      */
     RESTAURANT,
@@ -93,13 +94,13 @@ public enum InvestmentType {
     COMMERCIAL_UNIT,
 
     /**
-     * B\u00fcrogeb\u00e4ude
+     * Bürogebäude
      * 
      */
     OFFICE_BUILDING,
 
     /**
-     * Gesch\u00e4ftshaus
+     * Geschäftshaus
      * 
      */
     COMMERCIAL_BUILDING,
@@ -123,7 +124,7 @@ public enum InvestmentType {
     INDUSTRIAL_PROPERTY,
 
     /**
-     * Laden/Verkaufsfl\u00e4che
+     * Laden/Verkaufsfläche
      * 
      */
     SHOP_SALES_FLOOR,
@@ -147,7 +148,7 @@ public enum InvestmentType {
     SUPERMARKET,
 
     /**
-     * Wohn-/ Gesch\u00e4ftshaus
+     * Wohn-/ Geschäftshaus
      * 
      */
     LIVING_BUSINESS_HOUSE,

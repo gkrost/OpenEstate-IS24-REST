@@ -1,41 +1,41 @@
-
 package org.openestate.is24.restapi.xml.common;
 
-import javax.annotation.Generated;
-import javax.xml.bind.annotation.XmlEnum;
-import javax.xml.bind.annotation.XmlType;
+import jakarta.annotation.Generated;
+import jakarta.xml.bind.annotation.XmlEnum;
+import jakarta.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for StoreType.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * <p>
- * <pre>
- * &lt;simpleType name="StoreType"&gt;
- *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
- *     &lt;enumeration value="SHOWROOM_SPACE"/&gt;
- *     &lt;enumeration value="SHOPPING_CENTRE"/&gt;
- *     &lt;enumeration value="FACTORY_OUTLET"/&gt;
- *     &lt;enumeration value="DEPARTMENT_STORE"/&gt;
- *     &lt;enumeration value="KIOSK"/&gt;
- *     &lt;enumeration value="STORE"/&gt;
- *     &lt;enumeration value="SELF_SERVICE_MARKET"/&gt;
- *     &lt;enumeration value="SALES_AREA"/&gt;
- *     &lt;enumeration value="SALES_HALL"/&gt;
- *   &lt;/restriction&gt;
- * &lt;/simpleType&gt;
- * </pre>
+ * 
+ * <p>Java class for StoreType</p>.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.</p>
+ * <pre>{@code
+ * <simpleType name="StoreType">
+ *   <restriction base="{http://www.w3.org/2001/XMLSchema}string">
+ *     <enumeration value="SHOWROOM_SPACE"/>
+ *     <enumeration value="SHOPPING_CENTRE"/>
+ *     <enumeration value="FACTORY_OUTLET"/>
+ *     <enumeration value="DEPARTMENT_STORE"/>
+ *     <enumeration value="KIOSK"/>
+ *     <enumeration value="STORE"/>
+ *     <enumeration value="SELF_SERVICE_MARKET"/>
+ *     <enumeration value="SALES_AREA"/>
+ *     <enumeration value="SALES_HALL"/>
+ *   </restriction>
+ * </simpleType>
+ * }</pre>
  * 
  */
 @XmlType(name = "StoreType")
 @XmlEnum
-@Generated(value = "com.sun.tools.xjc.Driver", date = "2021-08-07T09:44:49+02:00", comments = "JAXB RI v2.3.0")
+@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.9", date = "2026-08-26T20:20:00+02:00")
 public enum StoreType {
 
 
     /**
-     * Ausstellungsfl\u00e4che
+     * Ausstellungsfläche
      * 
      */
     SHOWROOM_SPACE,
@@ -77,7 +77,7 @@ public enum StoreType {
     SELF_SERVICE_MARKET,
 
     /**
-     * Verkaufsfl\u00e4che
+     * Verkaufsfläche
      * 
      */
     SALES_AREA,

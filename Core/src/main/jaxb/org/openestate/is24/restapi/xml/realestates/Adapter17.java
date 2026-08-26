@@ -1,8 +1,7 @@
-
 package org.openestate.is24.restapi.xml.realestates;
 
 import java.math.BigDecimal;
-import javax.xml.bind.annotation.adapters.XmlAdapter;
+import jakarta.xml.bind.annotation.adapters.XmlAdapter;
 
 public class Adapter17
     extends XmlAdapter<String, BigDecimal>

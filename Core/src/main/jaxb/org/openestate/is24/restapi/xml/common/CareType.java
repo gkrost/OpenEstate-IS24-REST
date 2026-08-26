@@ -1,58 +1,55 @@
-
 package org.openestate.is24.restapi.xml.common;
 
-import javax.annotation.Generated;
-import javax.xml.bind.annotation.XmlEnum;
-import javax.xml.bind.annotation.XmlType;
+import jakarta.annotation.Generated;
+import jakarta.xml.bind.annotation.XmlEnum;
+import jakarta.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for CareType.
+ * Aufzählung der
+ *                 Pflegeplatztypen
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * <p>
- * <pre>
- * &lt;simpleType name="CareType"&gt;
- *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
- *     &lt;enumeration value="STATIONARY_CARE"/&gt;
- *     &lt;enumeration value="DAY_CARE"/&gt;
- *     &lt;enumeration value="SHORT_TERM_CARE"/&gt;
- *     &lt;enumeration value="RESPITE_CARE"/&gt;
- *   &lt;/restriction&gt;
- * &lt;/simpleType&gt;
- * </pre>
+ * <p>Java class for CareType</p>.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.</p>
+ * <pre>{@code
+ * <simpleType name="CareType">
+ *   <restriction base="{http://www.w3.org/2001/XMLSchema}string">
+ *     <enumeration value="STATIONARY_CARE"/>
+ *     <enumeration value="DAY_CARE"/>
+ *     <enumeration value="SHORT_TERM_CARE"/>
+ *     <enumeration value="RESPITE_CARE"/>
+ *   </restriction>
+ * </simpleType>
+ * }</pre>
  * 
  */
 @XmlType(name = "CareType")
 @XmlEnum
-@Generated(value = "com.sun.tools.xjc.Driver", date = "2021-08-07T09:44:49+02:00", comments = "JAXB RI v2.3.0")
+@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.9", date = "2026-08-26T20:20:00+02:00")
 public enum CareType {
 
 
     /**
-     * Vollstation\u00e4re Pflege
-     *                     
+     * Vollstationäre Pflege
      * 
      */
     STATIONARY_CARE,
 
     /**
      * Tagespflege
-     *                     
      * 
      */
     DAY_CARE,
 
     /**
      * Kurzzeitpflege
-     *                     
      * 
      */
     SHORT_TERM_CARE,
 
     /**
      * Verhinderungspflege
-     *                     
      * 
      */
     RESPITE_CARE;

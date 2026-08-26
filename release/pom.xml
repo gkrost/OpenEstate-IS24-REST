@@ -161,7 +161,7 @@
                                     </dependencySourceExcludes>
 
                                     <!-- seems necessary to avoid build errors regarding modules (don't know why, yet) -->
-                                    <release>8</release>
+                                    <release>21</release>
                                 </configuration>
                             </execution>
                         </executions>

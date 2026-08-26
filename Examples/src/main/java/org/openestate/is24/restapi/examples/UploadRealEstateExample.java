@@ -17,7 +17,7 @@ package org.openestate.is24.restapi.examples;
 
 import java.io.IOException;
 import java.math.BigDecimal;
-import javax.xml.bind.JAXBException;
+import jakarta.xml.bind.JAXBException;
 import oauth.signpost.exception.OAuthException;
 import org.openestate.is24.restapi.AbstractClient;
 import org.openestate.is24.restapi.DefaultClient;

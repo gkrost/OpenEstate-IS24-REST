@@ -1,38 +1,38 @@
-
 package org.openestate.is24.restapi.xml.common;
 
-import javax.annotation.Generated;
-import javax.xml.bind.annotation.XmlEnum;
-import javax.xml.bind.annotation.XmlType;
+import jakarta.annotation.Generated;
+import jakarta.xml.bind.annotation.XmlEnum;
+import jakarta.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for RealEstateCondition.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * <p>
- * <pre>
- * &lt;simpleType name="RealEstateCondition"&gt;
- *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
- *     &lt;enumeration value="NO_INFORMATION"/&gt;
- *     &lt;enumeration value="FIRST_TIME_USE"/&gt;
- *     &lt;enumeration value="FIRST_TIME_USE_AFTER_REFURBISHMENT"/&gt;
- *     &lt;enumeration value="MINT_CONDITION"/&gt;
- *     &lt;enumeration value="REFURBISHED"/&gt;
- *     &lt;enumeration value="MODERNIZED"/&gt;
- *     &lt;enumeration value="FULLY_RENOVATED"/&gt;
- *     &lt;enumeration value="WELL_KEPT"/&gt;
- *     &lt;enumeration value="NEED_OF_RENOVATION"/&gt;
- *     &lt;enumeration value="NEGOTIABLE"/&gt;
- *     &lt;enumeration value="RIPE_FOR_DEMOLITION"/&gt;
- *   &lt;/restriction&gt;
- * &lt;/simpleType&gt;
- * </pre>
+ * 
+ * <p>Java class for RealEstateCondition</p>.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.</p>
+ * <pre>{@code
+ * <simpleType name="RealEstateCondition">
+ *   <restriction base="{http://www.w3.org/2001/XMLSchema}string">
+ *     <enumeration value="NO_INFORMATION"/>
+ *     <enumeration value="FIRST_TIME_USE"/>
+ *     <enumeration value="FIRST_TIME_USE_AFTER_REFURBISHMENT"/>
+ *     <enumeration value="MINT_CONDITION"/>
+ *     <enumeration value="REFURBISHED"/>
+ *     <enumeration value="MODERNIZED"/>
+ *     <enumeration value="FULLY_RENOVATED"/>
+ *     <enumeration value="WELL_KEPT"/>
+ *     <enumeration value="NEED_OF_RENOVATION"/>
+ *     <enumeration value="NEGOTIABLE"/>
+ *     <enumeration value="RIPE_FOR_DEMOLITION"/>
+ *   </restriction>
+ * </simpleType>
+ * }</pre>
  * 
  */
 @XmlType(name = "RealEstateCondition")
 @XmlEnum
-@Generated(value = "com.sun.tools.xjc.Driver", date = "2021-08-07T09:44:49+02:00", comments = "JAXB RI v2.3.0")
+@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.9", date = "2026-08-26T20:20:00+02:00")
 public enum RealEstateCondition {
 
 
@@ -73,7 +73,7 @@ public enum RealEstateCondition {
     MODERNIZED,
 
     /**
-     * Vollst\u00e4ndig renoviert
+     * Vollständig renoviert
      * 
      */
     FULLY_RENOVATED,
@@ -85,7 +85,7 @@ public enum RealEstateCondition {
     WELL_KEPT,
 
     /**
-     * Renovierungsbed\u00fcrftig
+     * Renovierungsbedürftig
      * 
      */
     NEED_OF_RENOVATION,
