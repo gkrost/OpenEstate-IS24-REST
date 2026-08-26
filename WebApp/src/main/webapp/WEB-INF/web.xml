@@ -44,13 +44,10 @@
 
   <context-param>
     <param-name>TrustAllCertificates</param-name>
-    <param-value>true</param-value>
+    <param-value>false</param-value>
     <description>
-      Trust all SSL certificates / Disable host name verification
-      This option disables certificate checks and hostname verification for
-      HTTPS traffic. You should disable this option on productive systems and
-      use a TrustStore instead.
-      See: http://docs.oracle.com/cd/E21454_01/html/821-2544/cnfg_ssl-overview_c.html
+      Previously disabled TLS certificate and hostname checks. Setting this to
+      true now fails servlet startup; use a TrustStore instead.
     </description>
   </context-param>
 
