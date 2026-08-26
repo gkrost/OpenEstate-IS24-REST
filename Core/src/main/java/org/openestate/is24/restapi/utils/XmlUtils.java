@@ -41,6 +41,10 @@ import jakarta.xml.bind.JAXBElement;
 import jakarta.xml.bind.JAXBException;
 import jakarta.xml.bind.Marshaller;
 import jakarta.xml.bind.Unmarshaller;
+import javax.xml.XMLConstants;
+import javax.xml.parsers.ParserConfigurationException;
+import javax.xml.parsers.SAXParserFactory;
+import javax.xml.transform.sax.SAXSource;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.commons.lang3.time.DateUtils;
 import org.apache.commons.text.StringEscapeUtils;
@@ -76,6 +80,9 @@ import org.openestate.is24.restapi.xml.realestates.Store;
 import org.openestate.is24.restapi.xml.realestates.TradeSite;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.xml.sax.InputSource;
+import org.xml.sax.SAXException;
+import org.xml.sax.XMLReader;
 
 /**
  * XML helper methods.
@@ -1675,7 +1682,27 @@ public final class XmlUtils {
     public static Object unmarshal(String xml) throws JAXBException, IOException {
         if (StringUtils.isBlank(xml)) return null;
         try (Reader reader = new StringReader(xml)) {
-            return createUnmarshaller().unmarshal(reader);
+            SAXSource source = new SAXSource(newSecureXmlReader(), new InputSource(reader));
+            return createUnmarshaller().unmarshal(source);
+        }
+    }
+
+    /**
+     * XML reader with DTDs disabled so untrusted IS24 responses cannot expand
+     * external entities.
+     */
+    private static XMLReader newSecureXmlReader() throws JAXBException {
+        try {
+            SAXParserFactory factory = SAXParserFactory.newInstance();
+            factory.setNamespaceAware(true);
+            factory.setXIncludeAware(false);
+            factory.setFeature(XMLConstants.FEATURE_SECURE_PROCESSING, true);
+            factory.setFeature("http://apache.org/xml/features/disallow-doctype-decl", true);
+            factory.setFeature("http://xml.org/sax/features/external-general-entities", false);
+            factory.setFeature("http://xml.org/sax/features/external-parameter-entities", false);
+            return factory.newSAXParser().getXMLReader();
+        } catch (ParserConfigurationException | SAXException ex) {
+            throw new JAXBException("Can't create a secure XML reader.", ex);
         }
     }
 
