@@ -1,6 +1,10 @@
 OpenEstate-IS24-REST 0.6
 ========================
 
+[![CI](https://github.com/gkrost/OpenEstate-IS24-REST/actions/workflows/ci.yml/badge.svg)](https://github.com/gkrost/OpenEstate-IS24-REST/actions/workflows/ci.yml)
+[![Maven Central](https://img.shields.io/maven-central/v/org.openestate.is24/OpenEstate-IS24-REST-Core.svg)](https://search.maven.org/artifact/org.openestate.is24/OpenEstate-IS24-REST-Core)
+[![License](https://img.shields.io/github/license/gkrost/OpenEstate-IS24-REST.svg)](https://github.com/gkrost/OpenEstate-IS24-REST/blob/main/LICENSE.txt)
+
 OpenEstate-IS24-REST is a client library for the REST-Webservice of [ImmobilienScout24.de](https://www.immobilienscout24.de/) written in Java. This library is used within [OpenEstate-ImmoTool](https://openestate.org/) and in some of our clients projects in order to import / export their real estates to [ImmobilienScout24.de](https://www.immobilienscout24.de/).
 
 
