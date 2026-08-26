@@ -17,7 +17,7 @@
            attributeFormDefault="unqualified"
            version="1.0">
 
-    <xs:import namespace="http://www.w3.org/1999/xlink"/>
+    <xs:import namespace="http://www.w3.org/1999/xlink" schemaLocation="xlink.xsd"/>
 
     <xs:element name="messages">
         <xs:annotation>
