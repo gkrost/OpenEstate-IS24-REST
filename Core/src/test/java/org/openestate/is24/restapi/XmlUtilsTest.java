@@ -98,4 +98,17 @@ public class XmlUtilsTest {
         //LOGGER.info( "ACTUAL RESULT: " + System.lineSeparator() + result );
         Assert.assertEquals(expectedResult, result);
     }
+
+    @Test
+    public void testUnmarshalRejectsDoctype() throws Exception {
+        String xxe = "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n"
+                + "<!DOCTYPE foo [<!ENTITY xxe SYSTEM \"file:///etc/passwd\">]>\n"
+                + "<foo>&xxe;</foo>";
+        try {
+            XmlUtils.unmarshal(xxe);
+            Assert.fail("DOCTYPE must be rejected");
+        } catch (jakarta.xml.bind.JAXBException ex) {
+            Assert.assertNotNull(ex);
+        }
+    }
 }

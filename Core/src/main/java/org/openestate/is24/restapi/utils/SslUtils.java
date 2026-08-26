@@ -17,13 +17,6 @@ package org.openestate.is24.restapi.utils;
 
 import java.security.KeyManagementException;
 import java.security.NoSuchAlgorithmException;
-import java.security.cert.X509Certificate;
-import javax.net.ssl.HostnameVerifier;
-import javax.net.ssl.HttpsURLConnection;
-import javax.net.ssl.SSLContext;
-import javax.net.ssl.SSLSession;
-import javax.net.ssl.TrustManager;
-import javax.net.ssl.X509TrustManager;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -41,60 +34,26 @@ public final class SslUtils {
     }
 
     /**
-     * Disable checking of SSL certificates in the application environment.
+     * Previously installed a {@code TrustManager} that accepted every
+     * certificate. That allowed machine-in-the-middle attacks and was removed.
      *
-     * @throws NoSuchAlgorithmException this should not occur
-     * @throws KeyManagementException   this should not occur
+     * @throws UnsupportedOperationException always
      */
     public static void disableCertificateChecks() throws NoSuchAlgorithmException, KeyManagementException {
-        // Create a trust manager that does not validate certificate chains
-        TrustManager[] trustAllCerts = new TrustManager[]{new InsecureTrustManager()};
-
-        // Install the all-trusting trust manager
-        SSLContext sc = SSLContext.getInstance("SSL");
-        sc.init(null, trustAllCerts, new java.security.SecureRandom());
-        HttpsURLConnection.setDefaultSSLSocketFactory(sc.getSocketFactory());
+        throw new UnsupportedOperationException(
+                "Disabling TLS certificate checks was removed because it allowed "
+                        + "machine-in-the-middle attacks.");
     }
 
     /**
-     * Disable hostname verification for SSL connections in the application
-     * environment.
+     * Previously installed a {@code HostnameVerifier} that accepted every host
+     * name. That allowed machine-in-the-middle attacks and was removed.
+     *
+     * @throws UnsupportedOperationException always
      */
     public static void disableHostnameVerification() {
-        HttpsURLConnection.setDefaultHostnameVerifier(new InsecureHostnameVerifier());
-    }
-
-    /**
-     * A {@link HostnameVerifier} that accepts all host names.
-     * <p>
-     * This class disables certificate checks for encrypted connections. You
-     * should not use this feature in a productive system.
-     */
-    public final static class InsecureHostnameVerifier implements HostnameVerifier {
-        @Override
-        public boolean verify(String hostname, SSLSession session) {
-            return true;
-        }
-    }
-
-    /**
-     * A {@link X509TrustManager} that accepts all certificates.
-     * <p>
-     * This class disables certificate checks for encrypted connections. You
-     * should not use this feature in a productive system.
-     */
-    public final static class InsecureTrustManager implements X509TrustManager {
-        @Override
-        public java.security.cert.X509Certificate[] getAcceptedIssuers() {
-            return null;
-        }
-
-        @Override
-        public void checkClientTrusted(X509Certificate[] certs, String authType) {
-        }
-
-        @Override
-        public void checkServerTrusted(X509Certificate[] certs, String authType) {
-        }
+        throw new UnsupportedOperationException(
+                "Disabling TLS hostname verification was removed because it allowed "
+                        + "machine-in-the-middle attacks.");
     }
 }

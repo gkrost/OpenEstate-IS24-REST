@@ -31,7 +31,6 @@ import org.apache.commons.lang3.StringUtils;
 import org.openestate.is24.restapi.AbstractClient;
 import org.openestate.is24.restapi.DefaultClient;
 import org.openestate.is24.restapi.utils.Authorization;
-import org.openestate.is24.restapi.utils.SslUtils;
 import org.openestate.is24.restapi.utils.Verification;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -252,18 +251,10 @@ public class VerificationServlet extends HttpServlet {
             throw new ServletException("Can't init servlet: " + StringUtils.join(errors, ", "));
         }
 
-        // trust all SSL certificates / disable host name verification
         String trustAllCertificates = StringUtils.trimToNull(context.getInitParameter("TrustAllCertificates"));
         if ("1".equals(trustAllCertificates) || "true".equalsIgnoreCase(trustAllCertificates)) {
-            try {
-                // install all-trusting trust manager
-                SslUtils.disableCertificateChecks();
-
-                // install all-trusting host verifier
-                SslUtils.disableHostnameVerification();
-            } catch (Exception ex) {
-                throw new ServletException("Can't setup insecure SSL context!", ex);
-            }
+            throw new ServletException(
+                    "TrustAllCertificates is no longer supported; it disabled TLS verification.");
         }
     }
 
