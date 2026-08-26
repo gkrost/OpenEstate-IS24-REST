@@ -1,48 +1,48 @@
-
 package org.openestate.is24.restapi.xml.common;
 
-import javax.annotation.Generated;
-import javax.xml.bind.annotation.XmlEnum;
-import javax.xml.bind.annotation.XmlType;
+import jakarta.annotation.Generated;
+import jakarta.xml.bind.annotation.XmlEnum;
+import jakarta.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for RealEstateType.
+ * Aufzählung der is24 Immobilientypen.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * <p>
- * <pre>
- * &lt;simpleType name="RealEstateType"&gt;
- *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
- *     &lt;enumeration value="APARTMENT_RENT"/&gt;
- *     &lt;enumeration value="APARTMENT_BUY"/&gt;
- *     &lt;enumeration value="HOUSE_RENT"/&gt;
- *     &lt;enumeration value="HOUSE_BUY"/&gt;
- *     &lt;enumeration value="GARAGE_RENT"/&gt;
- *     &lt;enumeration value="GARAGE_BUY"/&gt;
- *     &lt;enumeration value="LIVING_RENT_SITE"/&gt;
- *     &lt;enumeration value="LIVING_BUY_SITE"/&gt;
- *     &lt;enumeration value="TRADE_SITE"/&gt;
- *     &lt;enumeration value="HOUSE_TYPE"/&gt;
- *     &lt;enumeration value="FLAT_SHARE_ROOM"/&gt;
- *     &lt;enumeration value="SENIOR_CARE"/&gt;
- *     &lt;enumeration value="ASSISTED_LIVING"/&gt;
- *     &lt;enumeration value="OFFICE"/&gt;
- *     &lt;enumeration value="INDUSTRY"/&gt;
- *     &lt;enumeration value="STORE"/&gt;
- *     &lt;enumeration value="GASTRONOMY"/&gt;
- *     &lt;enumeration value="SPECIAL_PURPOSE"/&gt;
- *     &lt;enumeration value="INVESTMENT"/&gt;
- *     &lt;enumeration value="COMPULSORY_AUCTION"/&gt;
- *     &lt;enumeration value="SHORT_TERM_ACCOMMODATION"/&gt;
- *   &lt;/restriction&gt;
- * &lt;/simpleType&gt;
- * </pre>
+ * <p>Java class for RealEstateType</p>.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.</p>
+ * <pre>{@code
+ * <simpleType name="RealEstateType">
+ *   <restriction base="{http://www.w3.org/2001/XMLSchema}string">
+ *     <enumeration value="APARTMENT_RENT"/>
+ *     <enumeration value="APARTMENT_BUY"/>
+ *     <enumeration value="HOUSE_RENT"/>
+ *     <enumeration value="HOUSE_BUY"/>
+ *     <enumeration value="GARAGE_RENT"/>
+ *     <enumeration value="GARAGE_BUY"/>
+ *     <enumeration value="LIVING_RENT_SITE"/>
+ *     <enumeration value="LIVING_BUY_SITE"/>
+ *     <enumeration value="TRADE_SITE"/>
+ *     <enumeration value="HOUSE_TYPE"/>
+ *     <enumeration value="FLAT_SHARE_ROOM"/>
+ *     <enumeration value="SENIOR_CARE"/>
+ *     <enumeration value="ASSISTED_LIVING"/>
+ *     <enumeration value="OFFICE"/>
+ *     <enumeration value="INDUSTRY"/>
+ *     <enumeration value="STORE"/>
+ *     <enumeration value="GASTRONOMY"/>
+ *     <enumeration value="SPECIAL_PURPOSE"/>
+ *     <enumeration value="INVESTMENT"/>
+ *     <enumeration value="COMPULSORY_AUCTION"/>
+ *     <enumeration value="SHORT_TERM_ACCOMMODATION"/>
+ *   </restriction>
+ * </simpleType>
+ * }</pre>
  * 
  */
 @XmlType(name = "RealEstateType")
 @XmlEnum
-@Generated(value = "com.sun.tools.xjc.Driver", date = "2021-08-07T09:44:49+02:00", comments = "JAXB RI v2.3.0")
+@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.9", date = "2026-08-26T20:20:00+02:00")
 public enum RealEstateType {
 
 
@@ -83,19 +83,19 @@ public enum RealEstateType {
     GARAGE_BUY,
 
     /**
-     * Wohngrundst\u00fcck zur Miete
+     * Wohngrundstück zur Miete
      * 
      */
     LIVING_RENT_SITE,
 
     /**
-     * Wohngrundst\u00fcck zum Kauf
+     * Wohngrundstück zum Kauf
      * 
      */
     LIVING_BUY_SITE,
 
     /**
-     * Gewerbegrundst\u00fcck
+     * Gewerbegrundstück
      * 
      */
     TRADE_SITE,
@@ -125,7 +125,7 @@ public enum RealEstateType {
     ASSISTED_LIVING,
 
     /**
-     * B\u00fcro und Praxis
+     * Büro und Praxis
      * 
      */
     OFFICE,

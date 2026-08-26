@@ -1,38 +1,38 @@
-
 package org.openestate.is24.restapi.xml.common;
 
-import javax.annotation.Generated;
-import javax.xml.bind.annotation.XmlEnum;
-import javax.xml.bind.annotation.XmlType;
+import jakarta.annotation.Generated;
+import jakarta.xml.bind.annotation.XmlEnum;
+import jakarta.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for ApartmentType.
+ * Auflistung der verfuegbaren Wohnungsarten
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * <p>
- * <pre>
- * &lt;simpleType name="ApartmentType"&gt;
- *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
- *     &lt;enumeration value="ROOF_STOREY"/&gt;
- *     &lt;enumeration value="LOFT"/&gt;
- *     &lt;enumeration value="MAISONETTE"/&gt;
- *     &lt;enumeration value="PENTHOUSE"/&gt;
- *     &lt;enumeration value="TERRACED_FLAT"/&gt;
- *     &lt;enumeration value="GROUND_FLOOR"/&gt;
- *     &lt;enumeration value="APARTMENT"/&gt;
- *     &lt;enumeration value="RAISED_GROUND_FLOOR"/&gt;
- *     &lt;enumeration value="HALF_BASEMENT"/&gt;
- *     &lt;enumeration value="OTHER"/&gt;
- *     &lt;enumeration value="NO_INFORMATION"/&gt;
- *   &lt;/restriction&gt;
- * &lt;/simpleType&gt;
- * </pre>
+ * <p>Java class for ApartmentType</p>.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.</p>
+ * <pre>{@code
+ * <simpleType name="ApartmentType">
+ *   <restriction base="{http://www.w3.org/2001/XMLSchema}string">
+ *     <enumeration value="ROOF_STOREY"/>
+ *     <enumeration value="LOFT"/>
+ *     <enumeration value="MAISONETTE"/>
+ *     <enumeration value="PENTHOUSE"/>
+ *     <enumeration value="TERRACED_FLAT"/>
+ *     <enumeration value="GROUND_FLOOR"/>
+ *     <enumeration value="APARTMENT"/>
+ *     <enumeration value="RAISED_GROUND_FLOOR"/>
+ *     <enumeration value="HALF_BASEMENT"/>
+ *     <enumeration value="OTHER"/>
+ *     <enumeration value="NO_INFORMATION"/>
+ *   </restriction>
+ * </simpleType>
+ * }</pre>
  * 
  */
 @XmlType(name = "ApartmentType")
 @XmlEnum
-@Generated(value = "com.sun.tools.xjc.Driver", date = "2021-08-07T09:44:49+02:00", comments = "JAXB RI v2.3.0")
+@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.9", date = "2026-08-26T20:20:00+02:00")
 public enum ApartmentType {
 
 
@@ -98,7 +98,6 @@ public enum ApartmentType {
 
     /**
      * Keine Angabe (wird zusammen mit OTHER verwendet)
-     *                     
      * 
      */
     @Deprecated

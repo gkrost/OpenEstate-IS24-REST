@@ -1,41 +1,41 @@
-
 package org.openestate.is24.restapi.xml.common;
 
-import javax.annotation.Generated;
-import javax.xml.bind.annotation.XmlEnum;
-import javax.xml.bind.annotation.XmlType;
+import jakarta.annotation.Generated;
+import jakarta.xml.bind.annotation.XmlEnum;
+import jakarta.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for HouseTypeBuildingType.
+ * Typenhaus Gebäudeart
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * <p>
- * <pre>
- * &lt;simpleType name="HouseTypeBuildingType"&gt;
- *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
- *     &lt;enumeration value="NO_INFORMATION"/&gt;
- *     &lt;enumeration value="BLOCKHOUSE"/&gt;
- *     &lt;enumeration value="BUNGALOW"/&gt;
- *     &lt;enumeration value="SEMI_DETACHED_HOUSE"/&gt;
- *     &lt;enumeration value="ONE_FAMILY_HOUSE"/&gt;
- *     &lt;enumeration value="FAMILY_HOUSE_WITH_LODGER_FLAT"/&gt;
- *     &lt;enumeration value="TUDOR_HOUSE"/&gt;
- *     &lt;enumeration value="WOODEN_HOUSE"/&gt;
- *     &lt;enumeration value="COUNTRY_HOUSE"/&gt;
- *     &lt;enumeration value="APARTMENT_BUILDING"/&gt;
- *     &lt;enumeration value="NON_DETACHED_HOUSE"/&gt;
- *     &lt;enumeration value="CITY_VILLA"/&gt;
- *     &lt;enumeration value="VILLA"/&gt;
- *     &lt;enumeration value="SEMI_DETACHED_HOUSE_PAIR"/&gt;
- *   &lt;/restriction&gt;
- * &lt;/simpleType&gt;
- * </pre>
+ * <p>Java class for HouseTypeBuildingType</p>.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.</p>
+ * <pre>{@code
+ * <simpleType name="HouseTypeBuildingType">
+ *   <restriction base="{http://www.w3.org/2001/XMLSchema}string">
+ *     <enumeration value="NO_INFORMATION"/>
+ *     <enumeration value="BLOCKHOUSE"/>
+ *     <enumeration value="BUNGALOW"/>
+ *     <enumeration value="SEMI_DETACHED_HOUSE"/>
+ *     <enumeration value="ONE_FAMILY_HOUSE"/>
+ *     <enumeration value="FAMILY_HOUSE_WITH_LODGER_FLAT"/>
+ *     <enumeration value="TUDOR_HOUSE"/>
+ *     <enumeration value="WOODEN_HOUSE"/>
+ *     <enumeration value="COUNTRY_HOUSE"/>
+ *     <enumeration value="APARTMENT_BUILDING"/>
+ *     <enumeration value="NON_DETACHED_HOUSE"/>
+ *     <enumeration value="CITY_VILLA"/>
+ *     <enumeration value="VILLA"/>
+ *     <enumeration value="SEMI_DETACHED_HOUSE_PAIR"/>
+ *   </restriction>
+ * </simpleType>
+ * }</pre>
  * 
  */
 @XmlType(name = "HouseTypeBuildingType")
 @XmlEnum
-@Generated(value = "com.sun.tools.xjc.Driver", date = "2021-08-07T09:44:49+02:00", comments = "JAXB RI v2.3.0")
+@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.9", date = "2026-08-26T20:20:00+02:00")
 public enum HouseTypeBuildingType {
 
 
@@ -94,7 +94,7 @@ public enum HouseTypeBuildingType {
     COUNTRY_HOUSE,
 
     /**
-     * Appartment Geb\u00e4ude
+     * Appartment Gebäude
      * 
      */
     APARTMENT_BUILDING,

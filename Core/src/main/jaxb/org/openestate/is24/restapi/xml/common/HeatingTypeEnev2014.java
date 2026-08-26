@@ -1,41 +1,41 @@
-
 package org.openestate.is24.restapi.xml.common;
 
-import javax.annotation.Generated;
-import javax.xml.bind.annotation.XmlEnum;
-import javax.xml.bind.annotation.XmlType;
+import jakarta.annotation.Generated;
+import jakarta.xml.bind.annotation.XmlEnum;
+import jakarta.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for HeatingTypeEnev2014.
+ * Auflistung der verfügbaren Heizungsarten für Energiezertifikat
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * <p>
- * <pre>
- * &lt;simpleType name="HeatingTypeEnev2014"&gt;
- *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
- *     &lt;enumeration value="NO_INFORMATION"/&gt;
- *     &lt;enumeration value="SELF_CONTAINED_CENTRAL_HEATING"/&gt;
- *     &lt;enumeration value="STOVE_HEATING"/&gt;
- *     &lt;enumeration value="CENTRAL_HEATING"/&gt;
- *     &lt;enumeration value="COMBINED_HEAT_AND_POWER_PLANT"/&gt;
- *     &lt;enumeration value="ELECTRIC_HEATING"/&gt;
- *     &lt;enumeration value="DISTRICT_HEATING"/&gt;
- *     &lt;enumeration value="FLOOR_HEATING"/&gt;
- *     &lt;enumeration value="GAS_HEATING"/&gt;
- *     &lt;enumeration value="WOOD_PELLET_HEATING"/&gt;
- *     &lt;enumeration value="NIGHT_STORAGE_HEATER"/&gt;
- *     &lt;enumeration value="OIL_HEATING"/&gt;
- *     &lt;enumeration value="SOLAR_HEATING"/&gt;
- *     &lt;enumeration value="HEAT_PUMP"/&gt;
- *   &lt;/restriction&gt;
- * &lt;/simpleType&gt;
- * </pre>
+ * <p>Java class for HeatingTypeEnev2014</p>.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.</p>
+ * <pre>{@code
+ * <simpleType name="HeatingTypeEnev2014">
+ *   <restriction base="{http://www.w3.org/2001/XMLSchema}string">
+ *     <enumeration value="NO_INFORMATION"/>
+ *     <enumeration value="SELF_CONTAINED_CENTRAL_HEATING"/>
+ *     <enumeration value="STOVE_HEATING"/>
+ *     <enumeration value="CENTRAL_HEATING"/>
+ *     <enumeration value="COMBINED_HEAT_AND_POWER_PLANT"/>
+ *     <enumeration value="ELECTRIC_HEATING"/>
+ *     <enumeration value="DISTRICT_HEATING"/>
+ *     <enumeration value="FLOOR_HEATING"/>
+ *     <enumeration value="GAS_HEATING"/>
+ *     <enumeration value="WOOD_PELLET_HEATING"/>
+ *     <enumeration value="NIGHT_STORAGE_HEATER"/>
+ *     <enumeration value="OIL_HEATING"/>
+ *     <enumeration value="SOLAR_HEATING"/>
+ *     <enumeration value="HEAT_PUMP"/>
+ *   </restriction>
+ * </simpleType>
+ * }</pre>
  * 
  */
 @XmlType(name = "HeatingTypeEnev2014")
 @XmlEnum
-@Generated(value = "com.sun.tools.xjc.Driver", date = "2021-08-07T09:44:49+02:00", comments = "JAXB RI v2.3.0")
+@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.9", date = "2026-08-26T20:20:00+02:00")
 public enum HeatingTypeEnev2014 {
 
 
@@ -76,13 +76,13 @@ public enum HeatingTypeEnev2014 {
     ELECTRIC_HEATING,
 
     /**
-     * Fernw\u00e4rmedampf
+     * Fernwärmedampf
      * 
      */
     DISTRICT_HEATING,
 
     /**
-     * Fu\u00dfbodenheizung
+     * Fußbodenheizung
      * 
      */
     FLOOR_HEATING,
@@ -106,7 +106,7 @@ public enum HeatingTypeEnev2014 {
     NIGHT_STORAGE_HEATER,
 
     /**
-     * \u00d6lheizung
+     * Ölheizung
      * 
      */
     OIL_HEATING,
@@ -118,7 +118,7 @@ public enum HeatingTypeEnev2014 {
     SOLAR_HEATING,
 
     /**
-     * W\u00e4rmepumpe
+     * Wärmepumpe
      * 
      */
     HEAT_PUMP;

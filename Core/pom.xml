@@ -79,8 +79,8 @@
             <scope>runtime</scope>
         </dependency>
         <dependency>
-            <groupId>org.jvnet.jaxb2_commons</groupId>
-            <artifactId>jaxb2-basics-runtime</artifactId>
+            <groupId>org.jvnet.jaxb</groupId>
+            <artifactId>jaxb-plugins-runtime</artifactId>
             <scope>compile</scope>
         </dependency>
         <dependency>
@@ -160,8 +160,8 @@
 
             <!-- JAXB -->
             <plugin>
-                <groupId>org.jvnet.jaxb2.maven2</groupId>
-                <artifactId>maven-jaxb23-plugin</artifactId>
+                <groupId>org.jvnet.jaxb</groupId>
+                <artifactId>jaxb-maven-plugin</artifactId>
                 <configuration>
                     <generateDirectory>${project.basedir}/src/main/jaxb</generateDirectory>
                     <schemaDirectory>${project.basedir}/src/main/schema</schemaDirectory>
@@ -183,7 +183,7 @@
                     <debug>false</debug>
                     <verbose>false</verbose>
 
-                    <specVersion>2.3</specVersion>
+                    <specVersion>3.0</specVersion>
                     <extension>true</extension>
                     <strict>true</strict>
                     <args>

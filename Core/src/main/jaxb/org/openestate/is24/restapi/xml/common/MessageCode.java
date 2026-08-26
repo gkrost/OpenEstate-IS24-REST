@@ -1,71 +1,70 @@
-
 package org.openestate.is24.restapi.xml.common;
 
-import javax.annotation.Generated;
-import javax.xml.bind.annotation.XmlEnum;
-import javax.xml.bind.annotation.XmlType;
+import jakarta.annotation.Generated;
+import jakarta.xml.bind.annotation.XmlEnum;
+import jakarta.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for MessageCode.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * <p>
- * <pre>
- * &lt;simpleType name="MessageCode"&gt;
- *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
- *     &lt;enumeration value="MESSAGE_RESOURCE_CREATED"/&gt;
- *     &lt;enumeration value="MESSAGE_RESOURCE_UPDATED"/&gt;
- *     &lt;enumeration value="MESSAGE_RESOURCE_DELETED"/&gt;
- *     &lt;enumeration value="MESSAGE_OPERATION_SUCCESSFUL"/&gt;
- *     &lt;enumeration value="ERROR_COMMON_HEADER_PARAMETER_VALIDATION_FAILED"/&gt;
- *     &lt;enumeration value="ERROR_COMMON_RESOURCE_REQUIRED"/&gt;
- *     &lt;enumeration value="ERROR_COMMON_REQUEST_CONFLICT"/&gt;
- *     &lt;enumeration value="ERROR_COMMON_AUTHENTICATION_REQUIRED"/&gt;
- *     &lt;enumeration value="ERROR_COMMON_AUTHENTICATION_OAUTH_NONCE_EXPIRED"/&gt;
- *     &lt;enumeration value="ERROR_COMMON_ACCESS_DENIED"/&gt;
- *     &lt;enumeration value="ERROR_COMMON_SCHEMA_VALIDATION_FAILED"/&gt;
- *     &lt;enumeration value="ERROR_COMMON_URL_PARAMETER_REQUIRED"/&gt;
- *     &lt;enumeration value="ERROR_COMMON_URL_PARAMETER_VALIDATION_FAILED"/&gt;
- *     &lt;enumeration value="ERROR_COMMON_URL_MULTIPLE_PARAMETERS_NOT_ALLOWED"/&gt;
- *     &lt;enumeration value="ERROR_COMMON_URL_PARAMETER_NOT_SUPPORTED"/&gt;
- *     &lt;enumeration value="ERROR_COMMON_NOT_IMPLEMENTED"/&gt;
- *     &lt;enumeration value="ERROR_COMMON_SERVICE_UNAVAILABLE"/&gt;
- *     &lt;enumeration value="ERROR_COMMON_INTERNAL_SERVER_ERROR"/&gt;
- *     &lt;enumeration value="ERROR_COMMON_UNPROCESSABLE_ENTITY"/&gt;
- *     &lt;enumeration value="ERROR_COMMON_INTERNAL_SERVER_ERROR_WITH_DETAILS"/&gt;
- *     &lt;enumeration value="ERROR_COMMON_RESOURCE_NOT_FOUND"/&gt;
- *     &lt;enumeration value="ERROR_COMMON_METHOD_NOT_ALLOWED"/&gt;
- *     &lt;enumeration value="ERROR_COMMON_ACCEPT_TYPE_NOT_APPLICABLE"/&gt;
- *     &lt;enumeration value="ERROR_COMMON_MEDIA_TYPE_UNSUPPORTED"/&gt;
- *     &lt;enumeration value="ERROR_COMMON_BAD_REQUEST"/&gt;
- *     &lt;enumeration value="ERROR_RESOURCE_NOT_SUPPORTED"/&gt;
- *     &lt;enumeration value="ERROR_RESOURCE_NOT_FOUND"/&gt;
- *     &lt;enumeration value="ERROR_RESOURCE_NOT_FOUND_FOR_MULTIPLE_PARAMETERS"/&gt;
- *     &lt;enumeration value="ERROR_RESOURCE_VALIDATION"/&gt;
- *     &lt;enumeration value="ERROR_REQUESTED_DATA_NOT_FOUND"/&gt;
- *     &lt;enumeration value="ERROR_RESOURCE_NOT_UNIQUE"/&gt;
- *     &lt;enumeration value="ERROR_RESOURCE_NO_LONGER_AVAILABLE"/&gt;
- *     &lt;enumeration value="ERROR_DB_NOT_AVAILABLE"/&gt;
- *     &lt;enumeration value="ERROR_CONTACT_DETAILS_MISSING"/&gt;
- *     &lt;enumeration value="ERROR_COMMISSION_SPLIT_VALIDATION_FAILED"/&gt;
- *     &lt;enumeration value="ERROR_INVALID_COORDINATES"/&gt;
- *     &lt;enumeration value="ERROR_GEOCODING_FAILED"/&gt;
- *   &lt;/restriction&gt;
- * &lt;/simpleType&gt;
- * </pre>
+ * 
+ * <p>Java class for MessageCode</p>.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.</p>
+ * <pre>{@code
+ * <simpleType name="MessageCode">
+ *   <restriction base="{http://www.w3.org/2001/XMLSchema}string">
+ *     <enumeration value="MESSAGE_RESOURCE_CREATED"/>
+ *     <enumeration value="MESSAGE_RESOURCE_UPDATED"/>
+ *     <enumeration value="MESSAGE_RESOURCE_DELETED"/>
+ *     <enumeration value="MESSAGE_OPERATION_SUCCESSFUL"/>
+ *     <enumeration value="ERROR_COMMON_HEADER_PARAMETER_VALIDATION_FAILED"/>
+ *     <enumeration value="ERROR_COMMON_RESOURCE_REQUIRED"/>
+ *     <enumeration value="ERROR_COMMON_REQUEST_CONFLICT"/>
+ *     <enumeration value="ERROR_COMMON_AUTHENTICATION_REQUIRED"/>
+ *     <enumeration value="ERROR_COMMON_AUTHENTICATION_OAUTH_NONCE_EXPIRED"/>
+ *     <enumeration value="ERROR_COMMON_ACCESS_DENIED"/>
+ *     <enumeration value="ERROR_COMMON_SCHEMA_VALIDATION_FAILED"/>
+ *     <enumeration value="ERROR_COMMON_URL_PARAMETER_REQUIRED"/>
+ *     <enumeration value="ERROR_COMMON_URL_PARAMETER_VALIDATION_FAILED"/>
+ *     <enumeration value="ERROR_COMMON_URL_MULTIPLE_PARAMETERS_NOT_ALLOWED"/>
+ *     <enumeration value="ERROR_COMMON_URL_PARAMETER_NOT_SUPPORTED"/>
+ *     <enumeration value="ERROR_COMMON_NOT_IMPLEMENTED"/>
+ *     <enumeration value="ERROR_COMMON_SERVICE_UNAVAILABLE"/>
+ *     <enumeration value="ERROR_COMMON_INTERNAL_SERVER_ERROR"/>
+ *     <enumeration value="ERROR_COMMON_UNPROCESSABLE_ENTITY"/>
+ *     <enumeration value="ERROR_COMMON_INTERNAL_SERVER_ERROR_WITH_DETAILS"/>
+ *     <enumeration value="ERROR_COMMON_RESOURCE_NOT_FOUND"/>
+ *     <enumeration value="ERROR_COMMON_METHOD_NOT_ALLOWED"/>
+ *     <enumeration value="ERROR_COMMON_ACCEPT_TYPE_NOT_APPLICABLE"/>
+ *     <enumeration value="ERROR_COMMON_MEDIA_TYPE_UNSUPPORTED"/>
+ *     <enumeration value="ERROR_COMMON_BAD_REQUEST"/>
+ *     <enumeration value="ERROR_RESOURCE_NOT_SUPPORTED"/>
+ *     <enumeration value="ERROR_RESOURCE_NOT_FOUND"/>
+ *     <enumeration value="ERROR_RESOURCE_NOT_FOUND_FOR_MULTIPLE_PARAMETERS"/>
+ *     <enumeration value="ERROR_RESOURCE_VALIDATION"/>
+ *     <enumeration value="ERROR_REQUESTED_DATA_NOT_FOUND"/>
+ *     <enumeration value="ERROR_RESOURCE_NOT_UNIQUE"/>
+ *     <enumeration value="ERROR_RESOURCE_NO_LONGER_AVAILABLE"/>
+ *     <enumeration value="ERROR_DB_NOT_AVAILABLE"/>
+ *     <enumeration value="ERROR_CONTACT_DETAILS_MISSING"/>
+ *     <enumeration value="ERROR_COMMISSION_SPLIT_VALIDATION_FAILED"/>
+ *     <enumeration value="ERROR_INVALID_COORDINATES"/>
+ *     <enumeration value="ERROR_GEOCODING_FAILED"/>
+ *   </restriction>
+ * </simpleType>
+ * }</pre>
  * 
  */
 @XmlType(name = "MessageCode")
 @XmlEnum
-@Generated(value = "com.sun.tools.xjc.Driver", date = "2021-08-07T09:44:49+02:00", comments = "JAXB RI v2.3.0")
+@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.9", date = "2026-08-26T20:20:00+02:00")
 public enum MessageCode {
 
 
     /**
      * Resource was successful created (includes name and id of the
      *                         resource).
-     *                     
      * 
      */
     MESSAGE_RESOURCE_CREATED,
@@ -73,7 +72,6 @@ public enum MessageCode {
     /**
      * Resource was successful updated (includes name and id of the
      *                         resource).
-     *                     
      * 
      */
     MESSAGE_RESOURCE_UPDATED,
@@ -81,7 +79,6 @@ public enum MessageCode {
     /**
      * Resource was successful deleted (includes name and id of the
      *                         resource).
-     *                     
      * 
      */
     MESSAGE_RESOURCE_DELETED,
@@ -101,7 +98,6 @@ public enum MessageCode {
     /**
      * Request is only valid within the context of an specific resource
      *                         (includes name of the required resource).
-     *                     
      * 
      */
     ERROR_COMMON_RESOURCE_REQUIRED,
@@ -109,7 +105,6 @@ public enum MessageCode {
     /**
      * A conflict occured during execution of an operation (e.g. on a
      *                         resource).
-     *                     
      * 
      */
     ERROR_COMMON_REQUEST_CONFLICT,
@@ -135,7 +130,6 @@ public enum MessageCode {
     /**
      * Validation according the schema failed (includes the description of
      *                         the failure).
-     *                     
      * 
      */
     ERROR_COMMON_SCHEMA_VALIDATION_FAILED,
@@ -143,7 +137,6 @@ public enum MessageCode {
     /**
      * A required parameter is missing in the request (contains the name of
      *                         the parameter).
-     *                     
      * 
      */
     ERROR_COMMON_URL_PARAMETER_REQUIRED,
@@ -151,7 +144,6 @@ public enum MessageCode {
     /**
      * At least one request parameter contains an invalid value (contains
      *                         the name and the value of the parameter).
-     *                     
      * 
      */
     ERROR_COMMON_URL_PARAMETER_VALIDATION_FAILED,
@@ -165,7 +157,6 @@ public enum MessageCode {
     /**
      * A request parameter is not supported (contains the name of the
      *                         parameter).
-     *                     
      * 
      */
     ERROR_COMMON_URL_PARAMETER_NOT_SUPPORTED,
@@ -226,7 +217,6 @@ public enum MessageCode {
 
     /**
      * The http request is invalid (check the url or body content).
-     *                     
      * 
      */
     ERROR_COMMON_BAD_REQUEST,
@@ -235,21 +225,18 @@ public enum MessageCode {
      * The resource is not supported within the context of the request
      *                         (includes name of the unauthorized and unavailable resource e.g. savedsearch is only for
      *                         searchers).
-     *                     
      * 
      */
     ERROR_RESOURCE_NOT_SUPPORTED,
 
     /**
      * Resource was not found (includes name and id of the resource).
-     *                     
      * 
      */
     ERROR_RESOURCE_NOT_FOUND,
 
     /**
      * Resource was not found for at least one of the given parameters.
-     *                     
      * 
      */
     ERROR_RESOURCE_NOT_FOUND_FOR_MULTIPLE_PARAMETERS,
@@ -257,7 +244,6 @@ public enum MessageCode {
     /**
      * Not all of the data for the resource are valid (includes the
      *                         description of the failure).
-     *                     
      * 
      */
     ERROR_RESOURCE_VALIDATION,
@@ -271,7 +257,6 @@ public enum MessageCode {
     /**
      * The requested resource is not unique, but is expected to be
      *                         unique.
-     *                     
      * 
      */
     ERROR_RESOURCE_NOT_UNIQUE,
@@ -279,7 +264,6 @@ public enum MessageCode {
     /**
      * resource requested is no longer available and will not be available
      *                         again.
-     *                     
      * 
      */
     ERROR_RESOURCE_NO_LONGER_AVAILABLE,

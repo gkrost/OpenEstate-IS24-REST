@@ -1,17 +1,17 @@
-
 package org.openestate.is24.restapi.xml.realtorbadges;
 
-import javax.xml.bind.JAXBElement;
-import javax.xml.bind.annotation.XmlElementDecl;
-import javax.xml.bind.annotation.XmlRegistry;
 import javax.xml.namespace.QName;
+import jakarta.annotation.Generated;
+import jakarta.xml.bind.JAXBElement;
+import jakarta.xml.bind.annotation.XmlElementDecl;
+import jakarta.xml.bind.annotation.XmlRegistry;
 
 
 /**
  * This object contains factory methods for each 
  * Java content interface and Java element interface 
  * generated in the org.openestate.is24.restapi.xml.realtorbadges package. 
- * <p>An ObjectFactory allows you to programatically 
+ * <p>An ObjectFactory allows you to programmatically 
  * construct new instances of the Java representation 
  * for XML content. The Java representation of XML 
  * content can consist of schema derived interfaces 
@@ -22,11 +22,12 @@ import javax.xml.namespace.QName;
  * 
  */
 @XmlRegistry
+@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.9", date = "2026-08-26T20:20:00+02:00")
 public class ObjectFactory {
 
-    private final static QName _Badge_QNAME = new QName("http://rest.immobilienscout24.de/schema/offer/realtorbadges/1.0", "badge");
-    private final static QName _VirtualBadge_QNAME = new QName("http://rest.immobilienscout24.de/schema/offer/realtorbadges/1.0", "virtualBadge");
-    private final static QName _RealtorBadges_QNAME = new QName("http://rest.immobilienscout24.de/schema/offer/realtorbadges/1.0", "realtorBadges");
+    private static final QName _Badge_QNAME = new QName("http://rest.immobilienscout24.de/schema/offer/realtorbadges/1.0", "badge");
+    private static final QName _VirtualBadge_QNAME = new QName("http://rest.immobilienscout24.de/schema/offer/realtorbadges/1.0", "virtualBadge");
+    private static final QName _RealtorBadges_QNAME = new QName("http://rest.immobilienscout24.de/schema/offer/realtorbadges/1.0", "realtorBadges");
 
     /**
      * Create a new ObjectFactory that can be used to create new instances of schema derived classes for package: org.openestate.is24.restapi.xml.realtorbadges
@@ -38,6 +39,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RealtorBadges }
      * 
+     * @return
+     *     the new instance of {@link RealtorBadges }
      */
     public RealtorBadges createRealtorBadges() {
         return new RealtorBadges();
@@ -46,6 +49,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link Badge }
      * 
+     * @return
+     *     the new instance of {@link Badge }
      */
     public Badge createBadge() {
         return new Badge();
@@ -54,6 +59,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link VirtualBadge }
      * 
+     * @return
+     *     the new instance of {@link VirtualBadge }
      */
     public VirtualBadge createVirtualBadge() {
         return new VirtualBadge();
@@ -62,6 +69,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RealtorBadges.Badges }
      * 
+     * @return
+     *     the new instance of {@link RealtorBadges.Badges }
      */
     public RealtorBadges.Badges createRealtorBadgesBadges() {
         return new RealtorBadges.Badges();
@@ -70,6 +79,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RealtorBadges.VirtualBadges }
      * 
+     * @return
+     *     the new instance of {@link RealtorBadges.VirtualBadges }
      */
     public RealtorBadges.VirtualBadges createRealtorBadgesVirtualBadges() {
         return new RealtorBadges.VirtualBadges();
@@ -85,7 +96,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://rest.immobilienscout24.de/schema/offer/realtorbadges/1.0", name = "badge")
     public JAXBElement<Badge> createBadge(Badge value) {
-        return new JAXBElement<Badge>(_Badge_QNAME, Badge.class, null, value);
+        return new JAXBElement<>(_Badge_QNAME, Badge.class, null, value);
     }
 
     /**
@@ -98,7 +109,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://rest.immobilienscout24.de/schema/offer/realtorbadges/1.0", name = "virtualBadge")
     public JAXBElement<VirtualBadge> createVirtualBadge(VirtualBadge value) {
-        return new JAXBElement<VirtualBadge>(_VirtualBadge_QNAME, VirtualBadge.class, null, value);
+        return new JAXBElement<>(_VirtualBadge_QNAME, VirtualBadge.class, null, value);
     }
 
     /**
@@ -111,7 +122,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://rest.immobilienscout24.de/schema/offer/realtorbadges/1.0", name = "realtorBadges")
     public JAXBElement<RealtorBadges> createRealtorBadges(RealtorBadges value) {
-        return new JAXBElement<RealtorBadges>(_RealtorBadges_QNAME, RealtorBadges.class, null, value);
+        return new JAXBElement<>(_RealtorBadges_QNAME, RealtorBadges.class, null, value);
     }
 
 }

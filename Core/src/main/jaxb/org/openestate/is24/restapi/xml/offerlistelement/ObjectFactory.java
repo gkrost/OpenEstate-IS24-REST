@@ -1,14 +1,14 @@
-
 package org.openestate.is24.restapi.xml.offerlistelement;
 
-import javax.xml.bind.annotation.XmlRegistry;
+import jakarta.annotation.Generated;
+import jakarta.xml.bind.annotation.XmlRegistry;
 
 
 /**
  * This object contains factory methods for each 
  * Java content interface and Java element interface 
  * generated in the org.openestate.is24.restapi.xml.offerlistelement package. 
- * <p>An ObjectFactory allows you to programatically 
+ * <p>An ObjectFactory allows you to programmatically 
  * construct new instances of the Java representation 
  * for XML content. The Java representation of XML 
  * content can consist of schema derived interfaces 
@@ -19,6 +19,7 @@ import javax.xml.bind.annotation.XmlRegistry;
  * 
  */
 @XmlRegistry
+@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.9", date = "2026-08-26T20:20:00+02:00")
 public class ObjectFactory {
 
 
@@ -32,6 +33,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link RealEstateList }
      * 
+     * @return
+     *     the new instance of {@link RealEstateList }
      */
     public RealEstateList createRealEstateList() {
         return new RealEstateList();
@@ -40,6 +43,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link OfferApartmentRent }
      * 
+     * @return
+     *     the new instance of {@link OfferApartmentRent }
      */
     public OfferApartmentRent createOfferApartmentRent() {
         return new OfferApartmentRent();
@@ -48,6 +53,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link OfferHouseRent }
      * 
+     * @return
+     *     the new instance of {@link OfferHouseRent }
      */
     public OfferHouseRent createOfferHouseRent() {
         return new OfferHouseRent();
@@ -56,6 +63,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link OfferApartmentBuy }
      * 
+     * @return
+     *     the new instance of {@link OfferApartmentBuy }
      */
     public OfferApartmentBuy createOfferApartmentBuy() {
         return new OfferApartmentBuy();
@@ -64,6 +73,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link OfferHouseBuy }
      * 
+     * @return
+     *     the new instance of {@link OfferHouseBuy }
      */
     public OfferHouseBuy createOfferHouseBuy() {
         return new OfferHouseBuy();
@@ -72,6 +83,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link OfferShortTermAccommodation }
      * 
+     * @return
+     *     the new instance of {@link OfferShortTermAccommodation }
      */
     public OfferShortTermAccommodation createOfferShortTermAccommodation() {
         return new OfferShortTermAccommodation();
@@ -80,6 +93,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link OfferHouseType }
      * 
+     * @return
+     *     the new instance of {@link OfferHouseType }
      */
     public OfferHouseType createOfferHouseType() {
         return new OfferHouseType();
@@ -88,6 +103,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link OfferOffice }
      * 
+     * @return
+     *     the new instance of {@link OfferOffice }
      */
     public OfferOffice createOfferOffice() {
         return new OfferOffice();
@@ -96,6 +113,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link OfferStore }
      * 
+     * @return
+     *     the new instance of {@link OfferStore }
      */
     public OfferStore createOfferStore() {
         return new OfferStore();
@@ -104,6 +123,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link OfferGastronomy }
      * 
+     * @return
+     *     the new instance of {@link OfferGastronomy }
      */
     public OfferGastronomy createOfferGastronomy() {
         return new OfferGastronomy();
@@ -112,6 +133,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link OfferIndustry }
      * 
+     * @return
+     *     the new instance of {@link OfferIndustry }
      */
     public OfferIndustry createOfferIndustry() {
         return new OfferIndustry();
@@ -120,6 +143,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link OfferSpecialPurpose }
      * 
+     * @return
+     *     the new instance of {@link OfferSpecialPurpose }
      */
     public OfferSpecialPurpose createOfferSpecialPurpose() {
         return new OfferSpecialPurpose();
@@ -128,6 +153,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link OfferInvestment }
      * 
+     * @return
+     *     the new instance of {@link OfferInvestment }
      */
     public OfferInvestment createOfferInvestment() {
         return new OfferInvestment();
@@ -136,6 +163,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link OfferCompulsoryAuction }
      * 
+     * @return
+     *     the new instance of {@link OfferCompulsoryAuction }
      */
     public OfferCompulsoryAuction createOfferCompulsoryAuction() {
         return new OfferCompulsoryAuction();
@@ -144,6 +173,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link OfferLivingBuySite }
      * 
+     * @return
+     *     the new instance of {@link OfferLivingBuySite }
      */
     public OfferLivingBuySite createOfferLivingBuySite() {
         return new OfferLivingBuySite();
@@ -152,6 +183,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link OfferLivingRentSite }
      * 
+     * @return
+     *     the new instance of {@link OfferLivingRentSite }
      */
     public OfferLivingRentSite createOfferLivingRentSite() {
         return new OfferLivingRentSite();
@@ -160,6 +193,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link OfferTradeSite }
      * 
+     * @return
+     *     the new instance of {@link OfferTradeSite }
      */
     public OfferTradeSite createOfferTradeSite() {
         return new OfferTradeSite();
@@ -168,6 +203,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link OfferGarageBuy }
      * 
+     * @return
+     *     the new instance of {@link OfferGarageBuy }
      */
     public OfferGarageBuy createOfferGarageBuy() {
         return new OfferGarageBuy();
@@ -176,6 +213,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link OfferGarageRent }
      * 
+     * @return
+     *     the new instance of {@link OfferGarageRent }
      */
     public OfferGarageRent createOfferGarageRent() {
         return new OfferGarageRent();
@@ -184,6 +223,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link OfferFlatShareRoom }
      * 
+     * @return
+     *     the new instance of {@link OfferFlatShareRoom }
      */
     public OfferFlatShareRoom createOfferFlatShareRoom() {
         return new OfferFlatShareRoom();
@@ -192,6 +233,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link OfferAssistedLiving }
      * 
+     * @return
+     *     the new instance of {@link OfferAssistedLiving }
      */
     public OfferAssistedLiving createOfferAssistedLiving() {
         return new OfferAssistedLiving();
@@ -200,6 +243,8 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link OfferSeniorCare }
      * 
+     * @return
+     *     the new instance of {@link OfferSeniorCare }
      */
     public OfferSeniorCare createOfferSeniorCare() {
         return new OfferSeniorCare();

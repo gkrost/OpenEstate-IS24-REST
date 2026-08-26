@@ -1,39 +1,37 @@
-
 package org.openestate.is24.restapi.xml.realestateproject;
 
-import javax.annotation.Generated;
-import javax.xml.bind.annotation.XmlEnum;
-import javax.xml.bind.annotation.XmlEnumValue;
-import javax.xml.bind.annotation.XmlType;
+import jakarta.annotation.Generated;
+import jakarta.xml.bind.annotation.XmlEnum;
+import jakarta.xml.bind.annotation.XmlEnumValue;
+import jakarta.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for percentType.
+ * <p>Java class for percentType</p>.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * <p>
- * <pre>
- * &lt;simpleType name="percentType"&gt;
- *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}int"&gt;
- *     &lt;enumeration value="0"/&gt;
- *     &lt;enumeration value="10"/&gt;
- *     &lt;enumeration value="20"/&gt;
- *     &lt;enumeration value="30"/&gt;
- *     &lt;enumeration value="40"/&gt;
- *     &lt;enumeration value="50"/&gt;
- *     &lt;enumeration value="60"/&gt;
- *     &lt;enumeration value="70"/&gt;
- *     &lt;enumeration value="80"/&gt;
- *     &lt;enumeration value="90"/&gt;
- *     &lt;enumeration value="100"/&gt;
- *   &lt;/restriction&gt;
- * &lt;/simpleType&gt;
- * </pre>
+ * <p>The following schema fragment specifies the expected content contained within this class.</p>
+ * <pre>{@code
+ * <simpleType name="percentType">
+ *   <restriction base="{http://www.w3.org/2001/XMLSchema}int">
+ *     <enumeration value="0"/>
+ *     <enumeration value="10"/>
+ *     <enumeration value="20"/>
+ *     <enumeration value="30"/>
+ *     <enumeration value="40"/>
+ *     <enumeration value="50"/>
+ *     <enumeration value="60"/>
+ *     <enumeration value="70"/>
+ *     <enumeration value="80"/>
+ *     <enumeration value="90"/>
+ *     <enumeration value="100"/>
+ *   </restriction>
+ * </simpleType>
+ * }</pre>
  * 
  */
 @XmlType(name = "percentType")
 @XmlEnum
-@Generated(value = "com.sun.tools.xjc.Driver", date = "2021-08-07T09:44:49+02:00", comments = "JAXB RI v2.3.0")
+@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.9", date = "2026-08-26T20:20:00+02:00")
 public enum PercentType {
 
     @XmlEnumValue("0")
@@ -64,10 +62,26 @@ public enum PercentType {
         value = v;
     }
 
+    /**
+     * Gets the value associated to the enum constant.
+     * 
+     * @return
+     *     The value linked to the enum.
+     */
     public String value() {
         return value;
     }
 
+    /**
+     * Gets the enum associated to the value passed as parameter.
+     * 
+     * @param v
+     *     The value to get the enum from.
+     * @return
+     *     The enum which corresponds to the value, if it exists.
+     * @throws IllegalArgumentException
+     *     If no value matches in the enum declaration.
+     */
     public static PercentType fromValue(String v) {
         for (PercentType c: PercentType.values()) {
             if (c.value.equals(v)) {

@@ -1,8 +1,7 @@
-
 package org.openestate.is24.restapi.xml;
 
 import java.net.URI;
-import javax.xml.bind.annotation.adapters.XmlAdapter;
+import jakarta.xml.bind.annotation.adapters.XmlAdapter;
 
 public class Adapter4
     extends XmlAdapter<String, URI>

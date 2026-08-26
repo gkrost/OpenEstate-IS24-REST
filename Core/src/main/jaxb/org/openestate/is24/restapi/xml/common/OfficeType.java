@@ -1,40 +1,40 @@
-
 package org.openestate.is24.restapi.xml.common;
 
-import javax.annotation.Generated;
-import javax.xml.bind.annotation.XmlEnum;
-import javax.xml.bind.annotation.XmlType;
+import jakarta.annotation.Generated;
+import jakarta.xml.bind.annotation.XmlEnum;
+import jakarta.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for OfficeType.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * <p>
- * <pre>
- * &lt;simpleType name="OfficeType"&gt;
- *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
- *     &lt;enumeration value="LOFT"/&gt;
- *     &lt;enumeration value="STUDIO"/&gt;
- *     &lt;enumeration value="OFFICE"/&gt;
- *     &lt;enumeration value="OFFICE_FLOOR"/&gt;
- *     &lt;enumeration value="OFFICE_BUILDING"/&gt;
- *     &lt;enumeration value="OFFICE_CENTRE"/&gt;
- *     &lt;enumeration value="OFFICE_STORAGE_BUILDING"/&gt;
- *     &lt;enumeration value="SURGERY"/&gt;
- *     &lt;enumeration value="SURGERY_FLOOR"/&gt;
- *     &lt;enumeration value="SURGERY_BUILDING"/&gt;
- *     &lt;enumeration value="COMMERCIAL_CENTRE"/&gt;
- *     &lt;enumeration value="LIVING_AND_COMMERCIAL_BUILDING"/&gt;
- *     &lt;enumeration value="OFFICE_AND_COMMERCIAL_BUILDING"/&gt;
- *   &lt;/restriction&gt;
- * &lt;/simpleType&gt;
- * </pre>
+ * 
+ * <p>Java class for OfficeType</p>.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.</p>
+ * <pre>{@code
+ * <simpleType name="OfficeType">
+ *   <restriction base="{http://www.w3.org/2001/XMLSchema}string">
+ *     <enumeration value="LOFT"/>
+ *     <enumeration value="STUDIO"/>
+ *     <enumeration value="OFFICE"/>
+ *     <enumeration value="OFFICE_FLOOR"/>
+ *     <enumeration value="OFFICE_BUILDING"/>
+ *     <enumeration value="OFFICE_CENTRE"/>
+ *     <enumeration value="OFFICE_STORAGE_BUILDING"/>
+ *     <enumeration value="SURGERY"/>
+ *     <enumeration value="SURGERY_FLOOR"/>
+ *     <enumeration value="SURGERY_BUILDING"/>
+ *     <enumeration value="COMMERCIAL_CENTRE"/>
+ *     <enumeration value="LIVING_AND_COMMERCIAL_BUILDING"/>
+ *     <enumeration value="OFFICE_AND_COMMERCIAL_BUILDING"/>
+ *   </restriction>
+ * </simpleType>
+ * }</pre>
  * 
  */
 @XmlType(name = "OfficeType")
 @XmlEnum
-@Generated(value = "com.sun.tools.xjc.Driver", date = "2021-08-07T09:44:49+02:00", comments = "JAXB RI v2.3.0")
+@Generated(value = "com.sun.tools.xjc.Driver", comments = "JAXB RI v4.0.9", date = "2026-08-26T20:20:00+02:00")
 public enum OfficeType {
 
 
@@ -51,31 +51,31 @@ public enum OfficeType {
     STUDIO,
 
     /**
-     * B\u00fcro
+     * Büro
      * 
      */
     OFFICE,
 
     /**
-     * B\u00fcroetage
+     * Büroetage
      * 
      */
     OFFICE_FLOOR,
 
     /**
-     * B\u00fcrohaus
+     * Bürohaus
      * 
      */
     OFFICE_BUILDING,
 
     /**
-     * B\u00fcrozentrum
+     * Bürozentrum
      * 
      */
     OFFICE_CENTRE,
 
     /**
-     * B\u00fcro-/ Lagergeb\u00e4ude
+     * Büro-/ Lagergebäude
      * 
      */
     OFFICE_STORAGE_BUILDING,
@@ -105,13 +105,13 @@ public enum OfficeType {
     COMMERCIAL_CENTRE,
 
     /**
-     * Wohn- und Gesch\u00e4ftsgeb\u00e4ude
+     * Wohn- und Geschäftsgebäude
      * 
      */
     LIVING_AND_COMMERCIAL_BUILDING,
 
     /**
-     * B\u00fcro- und Gesch\u00e4ftsgeb\u00e4ude
+     * Büro- und Geschäftsgebäude
      * 
      */
     OFFICE_AND_COMMERCIAL_BUILDING;
