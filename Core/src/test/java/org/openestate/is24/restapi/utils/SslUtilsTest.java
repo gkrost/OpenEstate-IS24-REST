@@ -29,7 +29,7 @@ import org.junit.runners.JUnit4;
 public class SslUtilsTest {
 
     @Test
-    public void testDisableCertificateChecksIsRemoved() {
+    public void testDisableCertificateChecksIsRemoved() throws Exception {
         try {
             SslUtils.disableCertificateChecks();
             Assert.fail("disableCertificateChecks must not install a trust-all manager");
